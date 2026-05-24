@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs'
 import { marked } from 'marked'
+import DOMPurify from 'isomorphic-dompurify'
 import './markdown.css'
 
 async function getMarkdownContent() {
@@ -18,10 +19,11 @@ async function getMarkdownContent() {
 export default async function Home() {
   const markdown = await getMarkdownContent()
   const htmlContent = await marked(markdown)
+  const sanitizedHtml = DOMPurify.sanitize(htmlContent)
 
   return (
     <main className="markdown-container">
-      <article className="markdown-content" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <article className="markdown-content" dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
     </main>
   )
 }
