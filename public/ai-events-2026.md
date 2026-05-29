@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-05-24
+> **Last updated:** 2026-05-29
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 ---
