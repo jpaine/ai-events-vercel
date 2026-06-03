@@ -49,11 +49,15 @@ if [ ! -s "$MARKDOWN_FILE.tmp" ]; then
 fi
 log "✓ Downloaded markdown file successfully"
 
-# Ensure proper UTF-8 encoding
-iconv -f UTF-8 -t UTF-8 "$MARKDOWN_FILE.tmp" > "$MARKDOWN_FILE" 2>/dev/null || \
-    mv "$MARKDOWN_FILE.tmp" "$MARKDOWN_FILE"
+# Fix encoding issues and normalize characters
+# Replace garbled en-dash sequences with simple hyphen for compatibility
+cat "$MARKDOWN_FILE.tmp" | \
+  tr -d '\xc3' | \
+  sed 's/Â//g' | \
+  sed 's/â€"/-/g' | \
+  sed 's/–/-/g' > "$MARKDOWN_FILE"
 rm -f "$MARKDOWN_FILE.tmp"
-log "✓ UTF-8 encoding verified"
+log "✓ File encoding normalized (garbled dashes replaced with hyphens)"
 
 # Check if file actually changed
 if git diff --quiet "$MARKDOWN_FILE"; then
