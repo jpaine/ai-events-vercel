@@ -1,0 +1,75 @@
+[2026-06-03 18:09:36] === Starting Daily Sync ===
+[2026-06-03 18:09:36] ✓ Changed to project directory
+[2026-06-03 18:09:36] Fetching latest markdown from GitHub...
+[2026-06-03 18:09:36] ✓ Downloaded markdown file successfully
+[2026-06-03 18:09:37] ✓ UTF-8 encoding verified
+[2026-06-03 18:09:37] ℹ No changes detected in markdown file - skipping commit
+[2026-06-03 18:09:37] === Sync Complete (No Changes) ===
+[2026-06-03 23:36:28] === Starting Daily Sync ===
+[2026-06-03 23:36:28] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-03 23:36:28] ✓ On main branch
+[2026-06-03 23:36:28] Fetching latest markdown from GitHub...
+[2026-06-03 23:36:28] ❌ ERROR: Failed to fetch markdown (timeout: 30s or network error)
+[2026-06-03 23:36:28] === Sync Failed ===
+[2026-06-03 23:36:41] === Starting Daily Sync ===
+[2026-06-03 23:36:41] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-03 23:36:41] ✓ On main branch
+[2026-06-03 23:36:41] Fetching latest markdown from GitHub...
+[2026-06-03 23:36:41] ❌ ERROR: Failed to fetch markdown (timeout: 30s or network error)
+[2026-06-03 23:36:41] === Sync Failed ===
+[2026-06-03 23:37:10] === Starting Daily Sync ===
+[2026-06-03 23:37:10] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-03 23:37:10] ✓ On main branch
+[2026-06-03 23:37:10] Fetching latest markdown from GitHub...
+[2026-06-03 23:37:10] ✓ Downloaded markdown file (   28716 bytes)
+[2026-06-03 23:37:10] Normalizing character encoding...
+[2026-06-03 23:37:10] ✓ File encoding normalized
+[2026-06-03 23:37:10] ✓ Changes detected in markdown file
+[2026-06-03 23:37:10] ✓ Changes staged
+[2026-06-03 23:37:10] ✓ Commit created: Daily sync: Update AI Events content - 2026-06-03 23:37:10 UTC
+[2026-06-03 23:37:10]   Commit SHA: 50055c86917a677b869cf0671d09038bdb60772e
+[2026-06-03 23:37:10] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   9e758f6..50055c8  main -> main
+[2026-06-03 23:37:12] ✓ Pushed to GitHub
+[2026-06-03 23:37:12] Verifying push to remote...
+[2026-06-03 23:37:13] Deploying to Vercel...
+Aliased: https://ai-events-vercel.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect ai-events-vercel-4jtm0l3ha-jeffs-projects-9be53fec.vercel.app --logs`
+- `vercel redeploy ai-events-vercel-4jtm0l3ha-jeffs-projects-9be53fec.vercel.app`
+[2026-06-03 23:38:39] ✓ Deployed to Vercel successfully
+[2026-06-03 23:38:39]   Deployment URL: https://ai-events-vercel.vercel.app
+[2026-06-03 23:38:39] Verifying deployment is live...
+[2026-06-03 23:38:40] ⚠ Could not verify deployment (might be DNS propagation delay)
+[2026-06-03 23:38:40] ✅ All tasks completed successfully
+[2026-06-03 23:38:40] === Sync Complete (Success) ===
+[2026-06-13 00:31:51] === Starting Daily Sync ===
+[2026-06-13 00:31:51] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-13 00:31:51] ✓ On main branch
+[2026-06-13 00:31:51] Fetching latest markdown from GitHub...
+[2026-06-13 00:31:52] ✓ Downloaded markdown file (   13435 bytes)
+[2026-06-13 00:31:52] Normalizing character encoding...
+[2026-06-13 00:31:52] ✓ File encoding normalized
+[2026-06-13 00:31:52] ✓ Changes detected in markdown file
+[2026-06-13 00:31:52] ✓ Changes staged
+[2026-06-13 00:31:52] ✓ Commit created: Daily sync: Update AI Events content - 2026-06-13 00:31:52 UTC
+[2026-06-13 00:31:52]   Commit SHA: 1d3746afadfa18d27326c98f602a9cdceeec892a
+[2026-06-13 00:31:52] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   4740bfc..1d3746a  main -> main
+[2026-06-13 00:31:54] ✓ Pushed to GitHub
+[2026-06-13 00:31:54] Verifying push to remote...
+[2026-06-13 00:31:54] Deploying to Vercel...
+Aliased: https://ai-events-vercel.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect ai-events-vercel-qdc8m5km9-jeffs-projects-9be53fec.vercel.app --logs`
+- `vercel redeploy ai-events-vercel-qdc8m5km9-jeffs-projects-9be53fec.vercel.app`
+[2026-06-13 00:33:21] ✓ Deployed to Vercel successfully
+[2026-06-13 00:33:21]   Deployment URL: https://ai-events-vercel.vercel.app
+[2026-06-13 00:33:21] Verifying deployment is live...
+[2026-06-13 00:33:22] ⚠ Could not verify deployment (might be DNS propagation delay)
+[2026-06-13 00:33:22] ✅ All tasks completed successfully
+[2026-06-13 00:33:22] === Sync Complete (Success) ===

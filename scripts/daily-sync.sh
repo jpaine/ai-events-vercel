@@ -65,44 +65,20 @@ if [ "$CURRENT_BRANCH" != "main" ]; then
 fi
 log "✓ On main branch"
 
-# Fetch latest markdown with timeout and error checking
-log "Fetching latest markdown from GitHub..."
-if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
-    error_exit "Failed to fetch markdown (timeout: ${CURL_TIMEOUT}s or network error)"
-fi
+# NOTE: The upstream repository (jpaine/ai-events) has persistent UTF-8 corruption.
+# This deployment maintains a clean local copy that can be manually updated.
+# For now, we skip fetching from the corrupted upstream source.
+#
+# To manually update the markdown file:
+# 1. Edit public/ai-events-2026.md directly with clean UTF-8 encoding
+# 2. Commit and push changes - this script will detect and redeploy them
+#
+# log "Fetching latest markdown from GitHub..."
+# if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
+#     error_exit "Failed to fetch markdown (timeout: ${CURL_TIMEOUT}s or network error)"
+# fi
 
-# Verify file was downloaded and has content
-if [ ! -s "$MARKDOWN_FILE.tmp" ]; then
-    error_exit "Downloaded file is empty or missing"
-fi
-log "✓ Downloaded markdown file ($(wc -c < "$MARKDOWN_FILE.tmp") bytes)"
-
-# Normalize character encoding
-# This handles common UTF-8 corruption patterns:
-# - Double-encoded en-dashes (â€–, Ã¢ÃÃ, ÃÃÃÃ¢ÃÃÃÃÃÃÃÃ, etc.)
-# - Garbled Latin-1 sequences
-# - Stray Â characters from bad UTF-8 conversion
-# Strategy: strip non-ASCII and replace with ASCII equivalents
-log "Normalizing character encoding..."
-cat "$MARKDOWN_FILE.tmp" | \
-  iconv -f UTF-8 -t ASCII//TRANSLIT 2>/dev/null | \
-  sed 's/--/-/g' | \
-  sed 's/ +-+ /-/g' | \
-  tr -d '\0-\31' > "$MARKDOWN_FILE.verify" 2>/dev/null || \
-  cat "$MARKDOWN_FILE.tmp" | \
-  sed 's/[Ã][Â]*/&/g' | \
-  sed 's/â[€]["]/-/g' | \
-  sed 's/Ã¢ÃÃ/-/g' | \
-  sed 's/[Ã]*â[€]*"/-/g' | \
-  sed 's/ÃÃÃÃ¢ÃÃÃÃÃÃÃÃ/-/g' | \
-  sed 's/[^[:print:]\n\t]//g' > "$MARKDOWN_FILE.verify"
-
-# Verify the normalized file is valid
-if ! grep -q "2026" "$MARKDOWN_FILE.verify"; then
-    error_exit "Character normalization produced invalid file (missing content)"
-fi
-mv "$MARKDOWN_FILE.verify" "$MARKDOWN_FILE"
-log "✓ File encoding normalized"
+log "Checking for local markdown updates..."
 
 # Check if file actually changed from HEAD
 if git diff --quiet "$MARKDOWN_FILE" HEAD -- "$MARKDOWN_FILE" 2>/dev/null; then
