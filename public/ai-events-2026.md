@@ -78,6 +78,7 @@
 | AI LIVE: The London Summit 2026 | Oct 20–21, 2026 | Olympia London, London, UK | AI / Enterprise AI / Generative AI | https://aimagazine.com/events/ai-live |
 | AIML-2026 (United Research Forum) | Oct 26–27, 2026 | Paris, France | AI / ML | https://unitedresearchforum.com/ai-conference/ |
 | Generative AI Summit Toronto 2026 | Nov 19, 2026 | Courtyard Toronto Downtown, Toronto, Canada | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/toronto/ |
+| Nxt AI 2026 (Next-Generation AI & ML) | Nov 2–4, 2026 | Boston, MA, USA | AI / ML / Generative AI | https://nxtai-conference.com/ |
 | MLcon Berlin 2026 | Nov 23–27, 2026 | Berlin, Germany | ML / AI | https://mlconference.ai/berlin/ |
 | Generative AI Summit London 2026 | Dec 1, 2026 | London, UK | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/london |
 | BIG.AI@MIT 2026 | 2026 (TBD) | MIT, Cambridge, MA, USA | Generative AI / LLM | https://ide.mit.edu/events/2026-the-business-implications-of-generative-ai-mit-big-aimit/ |
