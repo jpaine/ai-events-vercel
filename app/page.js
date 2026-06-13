@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs'
 import { marked } from 'marked'
 import DOMPurify from 'isomorphic-dompurify'
+import DiscordAlert from './components/DiscordAlert'
 import './markdown.css'
 
 async function getMarkdownContent() {
@@ -23,6 +24,7 @@ export default async function Home() {
 
   return (
     <main className="markdown-container">
+      <DiscordAlert />
       <article className="markdown-content" dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
     </main>
   )

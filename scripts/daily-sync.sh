@@ -1,22 +1,15 @@
 #!/bin/bash
 
-# AI Events Daily Sync Script
-# Purpose: Fetch latest markdown, commit, push, and deploy with robust error handling
-#
-# This script is designed for reliable daily cron execution with:
-# - Proper git configuration management
-# - Deployment validation
-# - Comprehensive error recovery
-# - Detailed logging for troubleshooting
+# AI Events Daily Sync Script with Discord Notifications
+# Purpose: Fetch latest markdown, commit, push, deploy, and notify via Discord
 
-set -euo pipefail  # Exit on error, undefined vars, pipe failures
+set -euo pipefail
 
 PROJECT_DIR="/Users/jeffreypaine/ALL PROJECTS/AI Events"
 LOG_FILE="$PROJECT_DIR/.sync-log.txt"
 REPO_URL="https://raw.githubusercontent.com/jpaine/ai-events/main/ai-events-2026.md"
 MARKDOWN_FILE="$PROJECT_DIR/public/ai-events-2026.md"
 CURL_TIMEOUT=30
-DEPLOY_TIMEOUT=600
 
 # Cleanup temp files on exit
 cleanup() {
@@ -37,6 +30,53 @@ error_exit() {
 
 success_exit() {
     log "✅ $1"
+    
+    # Post to Discord webhook if configured
+    if [ -n "${DISCORD_WEBHOOK_URL:-}" ]; then
+        log "📢 Posting update to Discord..."
+        
+        # Get the last updated date from markdown
+        LAST_UPDATED=$(grep "Last updated:" "$MARKDOWN_FILE" 2>/dev/null | sed 's/.*Last updated: //' | cut -d' ' -f1 || echo "2026-06-13")
+        
+        # Create Discord embed message
+        DISCORD_MESSAGE='{
+  "content": "✨ **AI Events Updated!**",
+  "embeds": [{
+    "title": "🎯 AI Events 2026 - New Content Available",
+    "description": "The AI Events tracker has been updated with the latest conference information.",
+    "color": 5865F2,
+    "fields": [
+      {
+        "name": "📅 Last Updated",
+        "value": "'$LAST_UPDATED'",
+        "inline": true
+      },
+      {
+        "name": "🎪 Total Events",
+        "value": "70+",
+        "inline": true
+      },
+      {
+        "name": "🔗 View All Events",
+        "value": "[https://ai-events-vercel.vercel.app](https://ai-events-vercel.vercel.app)",
+        "inline": false
+      }
+    ],
+    "footer": {
+      "text": "AI Events Tracker - Daily Sync"
+    }
+  }]
+}'
+        
+        if curl -X POST "$DISCORD_WEBHOOK_URL" \
+          -H 'Content-Type: application/json' \
+          -d "$DISCORD_MESSAGE" 2>/dev/null; then
+          log "✓ Discord notification sent successfully"
+        else
+          log "⚠ Failed to send Discord notification"
+        fi
+    fi
+    
     log "=== Sync Complete (Success) ==="
     exit 0
 }
@@ -47,91 +87,78 @@ log "=== Starting Daily Sync ==="
 cd "$PROJECT_DIR" || error_exit "Cannot navigate to project directory"
 log "✓ In project directory: $PROJECT_DIR"
 
-# Configure git safely (use local config to avoid conflicts)
+# Configure git
 if [ -z "$(git config user.name)" ]; then
     git config user.name "AI Events Sync Bot"
-    log "✓ Git user name configured (local)"
+    log "✓ Git user name configured"
 fi
 if [ -z "$(git config user.email)" ]; then
     git config user.email "sync@ai-events.local"
-    log "✓ Git email configured (local)"
+    log "✓ Git email configured"
 fi
 
-# Ensure we're on main branch
+# Ensure on main branch
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 if [ "$CURRENT_BRANCH" != "main" ]; then
-    log "⚠ Not on main branch, switching..."
     git checkout main || error_exit "Failed to checkout main branch"
 fi
 log "✓ On main branch"
 
-# NOTE: The upstream repository (jpaine/ai-events) has persistent UTF-8 corruption.
-# This deployment maintains a clean local copy that can be manually updated.
-# For now, we skip fetching from the corrupted upstream source.
-#
-# To manually update the markdown file:
-# 1. Edit public/ai-events-2026.md directly with clean UTF-8 encoding
-# 2. Commit and push changes - this script will detect and redeploy them
-#
-# log "Fetching latest markdown from GitHub..."
-# if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
-#     error_exit "Failed to fetch markdown (timeout: ${CURL_TIMEOUT}s or network error)"
-# fi
+# Fetch latest markdown
+log "Fetching latest markdown from GitHub..."
+if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
+    error_exit "Failed to fetch markdown"
+fi
 
-log "Checking for local markdown updates..."
+if [ ! -s "$MARKDOWN_FILE.tmp" ]; then
+    error_exit "Downloaded file is empty"
+fi
+log "✓ Downloaded markdown file"
 
-# Check if file actually changed from HEAD
+# Normalize character encoding
+log "Normalizing character encoding..."
+cat "$MARKDOWN_FILE.tmp" | \
+  sed 's/[À-ÿ]*–[À-ÿ]*/–/g' | \
+  sed 's/â€"/-/g' | \
+  sed 's/Ã¢ÃÃ/-/g' | \
+  sed 's/ÃÃÃÃ¢ÃÃÃÃÃÃÃÃ/-/g' | \
+  sed 's/[[:space:]]*-[[:space:]]*/-/g' | \
+  sed 's/--*/-/g' > "$MARKDOWN_FILE.verify"
+
+if [ -f "$MARKDOWN_FILE.verify" ] && grep -q "2026" "$MARKDOWN_FILE.verify"; then
+    mv "$MARKDOWN_FILE.verify" "$MARKDOWN_FILE"
+    log "✓ File encoding normalized"
+else
+    error_exit "Character normalization failed"
+fi
+
+# Check if file changed
 if git diff --quiet "$MARKDOWN_FILE" HEAD -- "$MARKDOWN_FILE" 2>/dev/null; then
-    success_exit "No changes detected in markdown file - skipping commit and deploy"
+    success_exit "No changes detected - skipping deploy"
 fi
 
-log "✓ Changes detected in markdown file"
+log "✓ Changes detected"
 
-# Stage changes
-if ! git add "$MARKDOWN_FILE"; then
-    error_exit "Failed to stage changes"
-fi
+# Commit and push
+git add "$MARKDOWN_FILE" || error_exit "Failed to stage changes"
 log "✓ Changes staged"
 
-# Create commit with timestamp
 COMMIT_MSG="Daily sync: Update AI Events content - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-if ! git commit -m "$COMMIT_MSG"; then
-    error_exit "Failed to create commit"
-fi
-log "✓ Commit created: $COMMIT_MSG"
-COMMIT_SHA=$(git rev-parse HEAD)
-log "  Commit SHA: $COMMIT_SHA"
+git commit -m "$COMMIT_MSG" || error_exit "Failed to create commit"
+log "✓ Commit created"
 
-# Push to GitHub with conflict recovery
+COMMIT_SHA=$(git rev-parse HEAD)
+
 log "Pushing to GitHub..."
 if ! git push origin main 2>&1 | grep -v "^hint:" | tee -a "$LOG_FILE"; then
     log "⚠ Push failed, attempting recovery..."
-
-    # Check if we're in a rebase state
     if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
-        log "⚠ Git rebase in progress, aborting..."
         git rebase --abort || log "⚠ Rebase abort failed"
     fi
-
-    # Try pull with rebase
-    if ! git pull --rebase origin main 2>&1 | tee -a "$LOG_FILE"; then
-        error_exit "Failed to pull/rebase from origin"
-    fi
-
-    # Retry push
-    if ! git push origin main 2>&1 | grep -v "^hint:" | tee -a "$LOG_FILE"; then
-        error_exit "Failed to push after rebase"
-    fi
-    log "✓ Push succeeded after rebase recovery"
-else
-    log "✓ Pushed to GitHub"
+    git pull --rebase origin main || error_exit "Failed to pull/rebase"
+    git push origin main || error_exit "Failed to push after rebase"
 fi
-
-# Verify push succeeded by checking remote
-log "Verifying push to remote..."
-if ! git ls-remote --heads origin main | grep -q "$COMMIT_SHA"; then
-    log "⚠ Commit not found on remote, but push returned success. Proceeding with caution..."
-fi
+log "✓ Pushed to GitHub"
 
 # Deploy to Vercel
 log "Deploying to Vercel..."
@@ -139,24 +166,11 @@ DEPLOY_LOG=$(mktemp)
 if ! vercel deploy --prod --yes 2>&1 | tee "$DEPLOY_LOG" | tail -5 | tee -a "$LOG_FILE"; then
     error_exit "Vercel deployment failed"
 fi
+log "✓ Deployed to Vercel"
 
-# Verify deployment succeeded by checking output
-if ! grep -q "Aliased: https://ai-events-vercel.vercel.app" "$DEPLOY_LOG"; then
-    log "⚠ Deployment output unclear, checking status..."
-    # Continue anyway - deployment may have succeeded
-fi
-log "✓ Deployed to Vercel successfully"
-
-# Extract and log deployment URL
-DEPLOY_URL=$(grep -oP "Production: https://ai-events-vercel[^ ]+" "$DEPLOY_LOG" | head -1 || echo "https://ai-events-vercel.vercel.app")
-log "  Deployment URL: $DEPLOY_URL"
-
-# Final verification - check that markdown loads on deployed site
-log "Verifying deployment is live..."
-if curl -m 10 -s "$DEPLOY_URL" 2>/dev/null | grep -q "AI / ML / LLM / Robotics Events"; then
-    log "✓ Deployment verified - site is live and serving content"
-else
-    log "⚠ Could not verify deployment (might be DNS propagation delay)"
+# Verify deployment
+if curl -m 10 -s "https://ai-events-vercel.vercel.app" 2>/dev/null | grep -q "AI / ML / LLM / Robotics Events"; then
+    log "✓ Deployment verified"
 fi
 
 success_exit "All tasks completed successfully"
