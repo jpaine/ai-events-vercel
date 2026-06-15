@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-06-13
+> **Last updated:** 2026-06-15
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 -
@@ -18,7 +18,7 @@
 | ACL 2026 | Jul 2–7, 2026 | San Diego, CA, USA | NLP | https://2026.aclweb.org/ |
 | ICML 2026 | Jul 6–12, 2026 | COEX, Seoul, South Korea | ML / Deep Learning | https://icml.cc/ |
 | IJCAI 2026 | Aug 15–21, 2026 | Bremen, Germany | AI / General | https://ijcai26.org/ |
-| ⭐ NEW IEEE ICDL 2026 (Intl Conf on Development & Learning) | Sep 15–18, 2026 | Kyoto University, Kyoto, Japan | Robotics / Developmental AI / ML | https://www.ieee-ras.org/event/2026-ieee-international-conference-on-development-and-learning-icdl-67399/ |
+| IEEE ICDL 2026 (Intl Conf on Development & Learning) | Sep 15–18, 2026 | Kyoto University, Kyoto, Japan | Robotics / Developmental AI / ML | https://www.ieee-ras.org/event/2026-ieee-international-conference-on-development-and-learning-icdl-67399/ |
 | IROS 2026 | Sep 27–Oct 1, 2026 | Pittsburgh, PA, USA | Robotics | https://2026.ieee-iros.org/ |
 | EMNLP 2026 | Oct 24–29, 2026 | Budapest, Hungary | NLP | https://2026.emnlp.org/ |
 | CoRL 2026 | Nov 9–12, 2026 | Austin, TX, USA | Robotics / ML | https://www.corl.org/ |
@@ -42,6 +42,8 @@
 | AI Engineer Europe 2026 | Apr 8–10, 2026 | London, UK | AI Engineering / LLM | https://www.ai.engineer/europe |
 | AI Engineer Miami 2026 | Apr 20–21, 2026 | Miami, FL, USA | AI Engineering / LLM | https://www.ai.engineer/miami |
 | MLcon Amsterdam 2026 | Apr 20–24, 2026 | Amsterdam, Netherlands | ML / AI | https://mlconference.ai/amsterdam/ |
+| ⭐ NEW AI Week 2026 | Apr 20–24, 2026 (week-long) | Nationwide, USA (in-person + virtual) | AI / General | https://www.aiweek.com/ |
+| ⭐ NEW AI Summit 2026 (CultureCon) | Apr 21, 2026 | Madison, WI, USA | AI / Future of Work | https://www.cultureconusa.org/ai-summit-2026 |
 | Google Cloud NEXT 2026 | Apr 22–24, 2026 | Mandalay Bay Convention Center, Las Vegas, NV, USA | Cloud / AI / LLM | https://cloud.google.com/next |
 | AI Dev 26 (DeepLearning.AI) | Apr 28–29, 2026 | San Francisco, CA, USA | AI Engineering / LLM | https://ai-dev.deeplearning.ai/ |
 | ODSC Gen AI X Summit 2026 | Apr 28–30, 2026 | Boston, MA, USA | Generative AI / LLM | https://odsc.com/boston/ |
@@ -112,6 +114,7 @@
 
 | Date | Action | Events Added |
 |-|-|-|
+| 2026-06-15 | Daily crawl update | 2 new events added: AI Week 2026 (Apr 20–24, 2026, nationwide USA), AI Summit 2026 / CultureCon (Apr 21, 2026, Madison, WI) |
 | 2026-06-13 | Daily crawl update | 1 new event added: IEEE ICDL 2026 (Intl Conf on Development & Learning) (Sep 15–18, 2026, Kyoto, Japan) |
 | 2026-06-09 | Daily crawl update | 1 new event added: Chief AI Officer Summit Dubai 2027 (May 14, 2027, Dubai, UAE) |
 | 2026-06-08 | Daily crawl update | 9 new events added: ECCV 2026 (Malmö, Sweden), AI ML Systems 2026 (Lake Como, Italy), IEEE Big Data 2026 (Phoenix, AZ), ICAIRML 2026 (Rome, Italy), WACV 2027, ICMLSC 2027 (Tokyo), AAAI 2027 (Montréal), NVIDIA GTC 2027 (San Jose), AIM-2027 (Orlando, FL) |
