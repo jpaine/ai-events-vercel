@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-06-15
+> **Last updated:** 2026-06-17
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 -
@@ -42,8 +42,8 @@
 | AI Engineer Europe 2026 | Apr 8–10, 2026 | London, UK | AI Engineering / LLM | https://www.ai.engineer/europe |
 | AI Engineer Miami 2026 | Apr 20–21, 2026 | Miami, FL, USA | AI Engineering / LLM | https://www.ai.engineer/miami |
 | MLcon Amsterdam 2026 | Apr 20–24, 2026 | Amsterdam, Netherlands | ML / AI | https://mlconference.ai/amsterdam/ |
-| ⭐ NEW AI Week 2026 | Apr 20–24, 2026 (week-long) | Nationwide, USA (in-person + virtual) | AI / General | https://www.aiweek.com/ |
-| ⭐ NEW AI Summit 2026 (CultureCon) | Apr 21, 2026 | Madison, WI, USA | AI / Future of Work | https://www.cultureconusa.org/ai-summit-2026 |
+| AI Week 2026 | Apr 20–24, 2026 (week-long) | Nationwide, USA (in-person + virtual) | AI / General | https://www.aiweek.com/ |
+| AI Summit 2026 (CultureCon) | Apr 21, 2026 | Madison, WI, USA | AI / Future of Work | https://www.cultureconusa.org/ai-summit-2026 |
 | Google Cloud NEXT 2026 | Apr 22–24, 2026 | Mandalay Bay Convention Center, Las Vegas, NV, USA | Cloud / AI / LLM | https://cloud.google.com/next |
 | AI Dev 26 (DeepLearning.AI) | Apr 28–29, 2026 | San Francisco, CA, USA | AI Engineering / LLM | https://ai-dev.deeplearning.ai/ |
 | ODSC Gen AI X Summit 2026 | Apr 28–30, 2026 | Boston, MA, USA | Generative AI / LLM | https://odsc.com/boston/ |
@@ -100,12 +100,13 @@
 | AI Builders Summit: Healthcare Boston 2027 | Mar 25, 2027 | Convene One Boston Place, Boston, MA, USA | AI / Healthcare / LLM | https://world.aiacceleratorinstitute.com/location/healthcareboston/ |
 | AI Agent & Copilot Summit NA 2027 | Mar 30–Apr 1, 2027 | Gaylord Pacific, San Diego, CA, USA | AI Agents / Enterprise AI / Copilot | https://copilot.summitna.com/ |
 | AAIML 2027 | Mar 29–31, 2027 | Nihon University, Tokyo, Japan | AI / ML | https://www.aaiml.net/ |
+| ⭐ NEW AIRC 2027 (8th Intl Conf on AI, Robotics & Control) | Apr 6–8, 2027 | Arizona State University, Tempe, AZ, USA | AI / Robotics / Control | https://www.airc.org/ |
+| AIM-2027 (4th Intl Conf on AI & ML) | Apr 26–28, 2027 | Orlando, FL, USA | AI / ML | https://artificialintelligence.unitedscientificgroup.org/ |
 | AI Engineer Europe 2027 | 2027 (TBD) | Europe (TBD) | AI Engineering | https://www.ai.engineer/europe |
 | WACV 2027 | Jan 4–8, 2027 | Location TBA | Computer Vision | https://wacv.thecvf.com/ |
 | ICMLSC 2027 (11th Intl Conf on ML & Soft Computing) | Jan 29–31, 2027 | Tokyo, Japan | Machine Learning | https://icmlsc.org/ |
 | AAAI 2027 (41st Annual) | Feb 16–23, 2027 | Montréal, QC, Canada | AI / General | https://aaai.org/ |
 | NVIDIA GTC 2027 | Mar 2027 (TBA) | San Jose, CA, USA | AI / General | https://www.nvidia.com/gtc/ |
-| AIM-2027 (4th Intl Conf on AI & ML) | Apr 26–28, 2027 | Orlando, FL, USA | AI / ML | https://artificialintelligence.unitedscientificgroup.org/ |
 | Chief AI Officer Summit Dubai 2027 | May 14, 2027 | Dubai, UAE | Enterprise AI / Agentic AI / Leadership | https://world.aiacceleratorinstitute.com/location/dubai/ |
 
 -
@@ -114,6 +115,7 @@
 
 | Date | Action | Events Added |
 |-|-|-|
+| 2026-06-17 | Daily crawl update | 1 new event added: AIRC 2027 (8th Intl Conf on AI, Robotics & Control) (Apr 6–8, 2027, Arizona State University, Tempe, AZ) |
 | 2026-06-15 | Daily crawl update | 2 new events added: AI Week 2026 (Apr 20–24, 2026, nationwide USA), AI Summit 2026 / CultureCon (Apr 21, 2026, Madison, WI) |
 | 2026-06-13 | Daily crawl update | 1 new event added: IEEE ICDL 2026 (Intl Conf on Development & Learning) (Sep 15–18, 2026, Kyoto, Japan) |
 | 2026-06-09 | Daily crawl update | 1 new event added: Chief AI Officer Summit Dubai 2027 (May 14, 2027, Dubai, UAE) |
