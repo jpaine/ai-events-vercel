@@ -17,18 +17,252 @@ body {
   letter-spacing: -0.3px;
 }
 
-main {
-  min-height: 100vh;
-  padding: 0;
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* ── Nav bar ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0d1117;
+  border-bottom: 1px solid #21262d;
+  width: 100%;
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3fb950;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f0f6fc;
+}
+
+.last-updated {
+  font-size: 11px;
+  color: #484f58;
+  background: #161b22;
+  border: 1px solid #21262d;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.nav-btn-cal {
+  background: #238636;
+  color: #f0f6fc;
+  border-color: #2ea043;
+}
+.nav-btn-cal:hover {
+  background: #2ea043;
+  color: #f0f6fc;
+}
+
+.nav-btn-gh {
+  background: transparent;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+.nav-btn-gh:hover {
+  border-color: #58a6ff;
+  color: #f0f6fc;
+}
+
+/* ── Hero ── */
+.hero {
+  border-bottom: 1px solid #21262d;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 40px 48px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #3fb950;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 18px;
+}
+
+.hero-pulse {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3fb950;
+  animation: hero-pulse 2s ease-in-out infinite;
+}
+
+@keyframes hero-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #f0f6fc;
+  letter-spacing: -1.2px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.hero-accent {
+  color: #58a6ff;
+}
+
+.hero-desc {
+  color: #8b949e;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  background: #238636;
+  color: #f0f6fc;
+  border: 1px solid #2ea043;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.cta-primary:hover { background: #2ea043; color: #f0f6fc; }
+
+.cta-outline {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #58a6ff;
+  border: 1px solid #30363d;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.cta-outline:hover {
+  border-color: #58a6ff;
+  background: rgba(88, 166, 255, 0.08);
+  color: #79c0ff;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-num {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f0f6fc;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.stat-lbl {
+  font-size: 12px;
+  color: #8b949e;
+}
+
+.stat-div {
+  width: 1px;
+  height: 32px;
+  background: #21262d;
+}
+
+/* ── Responsive ── */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
+  body { font-size: 14px; }
+
+  .navbar-inner {
+    padding: 0 16px;
+    height: 52px;
   }
+
+  .last-updated { display: none; }
+  .nav-btn-gh { display: none; }
+
+  .hero-inner {
+    padding: 36px 16px 32px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    letter-spacing: -0.8px;
+  }
+
+  .hero-stats { gap: 18px; }
+  .stat-num { font-size: 20px; }
 }
