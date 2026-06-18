@@ -117,3 +117,195 @@ https://ai-events-vercel-2lvf2vn73-jeffs-projects-9be53fec.vercel.appBuilding...
 Error: request to https://api.vercel.com/v13/deployments/dpl_3MsJfFjc5RtErqc8WbwUSUE4qBnw?teamId=team_6j0LztfZyJXLLAKLMQE1Wux9 failed, reason: read ETIMEDOUT
 [2026-06-13 04:03:21] ❌ ERROR: Vercel deployment failed
 [2026-06-13 04:03:21] === Sync Failed ===
+[2026-06-14 02:06:52] === Starting Daily Sync ===
+[2026-06-14 02:06:52] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-14 02:06:52] ✓ On main branch
+[2026-06-14 02:06:52] Fetching latest markdown from GitHub...
+[2026-06-14 02:06:53] ✓ Downloaded markdown file
+[2026-06-14 02:06:53] Normalizing character encoding...
+[2026-06-14 02:06:53] ✓ File encoding normalized
+[2026-06-14 02:06:53] ✓ Changes detected
+[2026-06-14 02:06:53] ✓ Changes staged
+[2026-06-14 02:06:53] ✓ Commit created
+[2026-06-14 02:06:53] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   6f66ed6..342ac12  main -> main
+[2026-06-14 02:06:54] ✓ Pushed to GitHub
+[2026-06-14 02:06:54] Deploying to Vercel...
+[2026-06-14 02:07:18] === Starting Daily Sync ===
+[2026-06-14 02:07:18] === Starting Daily Sync ===
+[2026-06-14 02:07:18] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-14 02:07:18] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-14 02:07:19] ✓ On main branch
+[2026-06-14 02:07:19] ✓ On main branch
+[2026-06-14 02:07:19] Fetching latest markdown from GitHub...
+[2026-06-14 02:07:19] Fetching latest markdown from GitHub...
+[2026-06-14 02:07:19] ✓ Downloaded markdown file
+[2026-06-14 02:07:19] ✓ Downloaded markdown file
+[2026-06-14 02:07:19] Normalizing character encoding...
+[2026-06-14 02:07:19] Normalizing character encoding...
+[2026-06-14 02:07:19] ✓ File encoding normalized
+[2026-06-14 02:07:19] ✓ File encoding normalized
+[2026-06-14 02:07:19] ✓ Changes detected
+[2026-06-14 02:07:19] ✓ Changes detected
+[2026-06-14 02:07:19] ✓ Changes staged
+[2026-06-14 02:07:19] ✓ Changes staged
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .sync-log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	public/ai-events-2026.md.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[2026-06-14 02:07:19] ❌ ERROR: Failed to create commit
+[2026-06-14 02:07:19] ❌ ERROR: Failed to create commit
+[2026-06-14 02:07:19] === Sync Failed ===
+[2026-06-14 02:07:19] === Sync Failed ===
+Aliased: https://ai-events-vercel.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect ai-events-vercel-g4raav3nv-jeffs-projects-9be53fec.vercel.app --logs`
+- `vercel redeploy ai-events-vercel-g4raav3nv-jeffs-projects-9be53fec.vercel.app`
+[2026-06-14 02:08:19] ✓ Deployed to Vercel
+[2026-06-14 02:08:20] ✅ All tasks completed successfully
+[2026-06-14 02:08:20] === Sync Complete (Success) ===
+[2026-06-15 02:13:16] === Starting Daily Sync ===
+[2026-06-15 02:13:16] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-15 02:13:16] ✓ On main branch
+[2026-06-15 02:13:16] Fetching latest markdown from GitHub...
+[2026-06-15 02:13:17] ✓ Downloaded markdown file
+[2026-06-15 02:13:17] Normalizing character encoding...
+[2026-06-15 02:13:17] ✓ File encoding normalized
+[2026-06-15 02:13:17] ✓ Changes detected
+[2026-06-15 02:13:17] ✓ Changes staged
+[2026-06-15 02:13:17] ✓ Commit created
+[2026-06-15 02:13:17] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   342ac12..07aca47  main -> main
+[2026-06-15 02:13:19] ✓ Pushed to GitHub
+[2026-06-15 02:13:19] Deploying to Vercel...
+Uploading [====================] (37.2KB/37.2KB)
+Inspect: https://vercel.com/jeffs-projects-9be53fec/ai-events-vercel/Ba1HbbMCGPifVbBo2TXWKLzPXJH8 [3s]
+Production: https://ai-events-vercel-d0af8dy1g-jeffs-projects-9be53fec.vercel.app [3s]
+https://ai-events-vercel-d0af8dy1g-jeffs-projects-9be53fec.vercel.appBuilding...
+Error: request to https://api.vercel.com/v13/deployments/dpl_Ba1HbbMCGPifVbBo2TXWKLzPXJH8?teamId=team_6j0LztfZyJXLLAKLMQE1Wux9 failed, reason: read ECONNRESET
+[2026-06-15 02:23:41] ❌ ERROR: Vercel deployment failed
+[2026-06-15 02:23:41] === Sync Failed ===
+[2026-06-16 02:02:01] === Starting Daily Sync ===
+[2026-06-16 02:02:01] === Starting Daily Sync ===
+[2026-06-16 02:02:01] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-16 02:02:01] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-16 02:02:01] ✓ On main branch
+[2026-06-16 02:02:01] ✓ On main branch
+[2026-06-16 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-16 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-16 02:02:02] ✓ Downloaded markdown file
+[2026-06-16 02:02:02] ✓ Downloaded markdown file
+[2026-06-16 02:02:02] Normalizing character encoding...
+[2026-06-16 02:02:02] Normalizing character encoding...
+[2026-06-16 02:02:02] ✓ File encoding normalized
+[2026-06-16 02:02:02] ✓ File encoding normalized
+[2026-06-16 02:02:02] ✓ Changes detected
+[2026-06-16 02:02:02] ✓ Changes detected
+[2026-06-16 02:02:02] ✓ Changes staged
+[2026-06-16 02:02:02] ✓ Changes staged
+[main fd408d1] Daily sync: Update AI Events content - 2026-06-16 02:02:02 UTC
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+[2026-06-16 02:02:02] ✓ Commit created
+[2026-06-16 02:02:02] ✓ Commit created
+[2026-06-16 02:02:02] Pushing to GitHub...
+[2026-06-16 02:02:02] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   07aca47..fd408d1  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   07aca47..fd408d1  main -> main
+[2026-06-16 02:02:04] ✓ Pushed to GitHub
+[2026-06-16 02:02:04] ✓ Pushed to GitHub
+[2026-06-16 02:02:04] Deploying to Vercel...
+[2026-06-16 02:02:04] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 166: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 166: vercel: command not found
+[2026-06-16 02:02:04] ❌ ERROR: Vercel deployment failed
+[2026-06-16 02:02:04] ❌ ERROR: Vercel deployment failed
+[2026-06-16 02:02:04] === Sync Failed ===
+[2026-06-16 02:02:04] === Sync Failed ===
+[2026-06-17 02:02:00] === Starting Daily Sync ===
+[2026-06-17 02:02:00] === Starting Daily Sync ===
+[2026-06-17 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-17 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-17 02:02:01] ✓ On main branch
+[2026-06-17 02:02:01] ✓ On main branch
+[2026-06-17 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-17 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-17 02:02:02] ✓ Downloaded markdown file
+[2026-06-17 02:02:02] ✓ Downloaded markdown file
+[2026-06-17 02:02:02] Normalizing character encoding...
+[2026-06-17 02:02:02] Normalizing character encoding...
+[2026-06-17 02:02:02] ✓ File encoding normalized
+[2026-06-17 02:02:02] ✓ File encoding normalized
+[2026-06-17 02:02:02] ✓ Changes detected
+[2026-06-17 02:02:02] ✓ Changes detected
+[2026-06-17 02:02:02] ✓ Changes staged
+[2026-06-17 02:02:02] ✓ Changes staged
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    .claude/scheduled_tasks.lock
+	modified:   .sync-log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	public/ai-events-2026.md.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[2026-06-17 02:02:02] ❌ ERROR: Failed to create commit
+[2026-06-17 02:02:02] ❌ ERROR: Failed to create commit
+[2026-06-17 02:02:02] === Sync Failed ===
+[2026-06-17 02:02:02] === Sync Failed ===
+[2026-06-18 02:02:00] === Starting Daily Sync ===
+[2026-06-18 02:02:00] === Starting Daily Sync ===
+[2026-06-18 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-18 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-18 02:02:01] ✓ On main branch
+[2026-06-18 02:02:01] ✓ On main branch
+[2026-06-18 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-18 02:02:01] Fetching latest markdown from GitHub...
+[2026-06-18 02:02:01] ✓ Downloaded markdown file
+[2026-06-18 02:02:01] ✓ Downloaded markdown file
+[2026-06-18 02:02:02] Normalizing character encoding...
+[2026-06-18 02:02:02] Normalizing character encoding...
+[2026-06-18 02:02:02] ✓ File encoding normalized
+[2026-06-18 02:02:02] ✓ File encoding normalized
+[2026-06-18 02:02:02] ✓ Changes detected
+[2026-06-18 02:02:02] ✓ Changes detected
+[2026-06-18 02:02:02] ✓ Changes staged
+[2026-06-18 02:02:02] ✓ Changes staged
+[main 9a9c6c5] Daily sync: Update AI Events content - 2026-06-18 02:02:02 UTC
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+[2026-06-18 02:02:02] ✓ Commit created
+[2026-06-18 02:02:02] ✓ Commit created
+[2026-06-18 02:02:02] Pushing to GitHub...
+[2026-06-18 02:02:02] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   fd408d1..9a9c6c5  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   fd408d1..9a9c6c5  main -> main
+[2026-06-18 02:02:04] ✓ Pushed to GitHub
+[2026-06-18 02:02:04] ✓ Pushed to GitHub
+[2026-06-18 02:02:04] Deploying to Vercel...
+[2026-06-18 02:02:04] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 166: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 166: vercel: command not found
+[2026-06-18 02:02:04] ❌ ERROR: Vercel deployment failed
+[2026-06-18 02:02:04] ❌ ERROR: Vercel deployment failed
+[2026-06-18 02:02:04] === Sync Failed ===
+[2026-06-18 02:02:04] === Sync Failed ===

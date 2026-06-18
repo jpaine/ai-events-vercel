@@ -160,13 +160,6 @@ if ! git push origin main 2>&1 | grep -v "^hint:" | tee -a "$LOG_FILE"; then
 fi
 log "✓ Pushed to GitHub"
 
-# Generate ICS calendar file
-log "Generating ICS calendar file..."
-if ! node scripts/generate-ics.js 2>&1 | tee -a "$LOG_FILE"; then
-    log "⚠ ICS generation failed, continuing anyway..."
-fi
-git add public/ai-events-2026.ics 2>/dev/null || true
-
 # Deploy to Vercel
 log "Deploying to Vercel..."
 DEPLOY_LOG=$(mktemp)

@@ -2,6 +2,7 @@ import { readFileSync } from 'fs'
 import { marked } from 'marked'
 import DOMPurify from 'isomorphic-dompurify'
 import GitHubWatch from './components/GitHubWatch'
+import CalendarSubscribe from './components/CalendarSubscribe'
 import './markdown.css'
 
 async function getMarkdownContent() {
@@ -25,6 +26,7 @@ export default async function Home() {
   return (
     <main className="markdown-container">
       <GitHubWatch />
+      <CalendarSubscribe />
       <article className="markdown-content" dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />
     </main>
   )

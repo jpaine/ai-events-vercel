@@ -1,0 +1,1063 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI Events 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI Events 2026
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:Upcoming AI, ML, and Robotics Events and Conferences
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:event-aaai-2026-(40th-annual)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260120
+SUMMARY:AAAI 2026 (40th Annual)
+DESCRIPTION:AI / General\\n\\nLocation: Singapore EXPO\, Singapore\\n\\nURL: https://aaai.org/conference/aaai/aaai-26/
+LOCATION:Singapore EXPO\, Singapore
+URL:https://aaai.org/conference/aaai/aaai-26/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-iclr-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260423
+SUMMARY:ICLR 2026
+DESCRIPTION:Deep Learning\\n\\nLocation: Rio de Janeiro\, Brazil\\n\\nURL: https://iclr.cc/
+LOCATION:Rio de Janeiro\, Brazil
+URL:https://iclr.cc/
+CATEGORIES:Deep Learning
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-airc-2026-(ai,-robotics-&-control)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260408
+SUMMARY:AIRC 2026 (AI\, Robotics & Control)
+DESCRIPTION:AI / Robotics\\n\\nLocation: Savannah\, GA\, USA\\n\\nURL: https://www.airc.org/
+LOCATION:Savannah\, GA\, USA
+URL:https://www.airc.org/
+CATEGORIES:AI / Robotics
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-israi2026-(robotics,-ai-&-ml-summit)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260420
+SUMMARY:ISRAI2026 (Robotics\, AI & ML Summit)
+DESCRIPTION:Robotics / AI / ML\\n\\nLocation: Intercity Hotel Frankfurt Airport\, Frankfurt\, Germany\\n\\nURL: https://robotics2026.spectrumconferences.com/
+LOCATION:Intercity Hotel Frankfurt Airport\, Frankfurt\, Germany
+URL:https://robotics2026.spectrumconferences.com/
+CATEGORIES:Robotics / AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-icra-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260601
+SUMMARY:ICRA 2026
+DESCRIPTION:Robotics\\n\\nLocation: Vienna\, Austria\\n\\nURL: https://icra2026.org/
+LOCATION:Vienna\, Austria
+URL:https://icra2026.org/
+CATEGORIES:Robotics
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-cvpr-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260603
+SUMMARY:CVPR 2026
+DESCRIPTION:Computer Vision\\n\\nLocation: Denver Convention Center\, Denver\, CO\, USA\\n\\nURL: https://cvpr.thecvf.com/Conferences/2026
+LOCATION:Denver Convention Center\, Denver\, CO\, USA
+URL:https://cvpr.thecvf.com/Conferences/2026
+CATEGORIES:Computer Vision
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-acl-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260702
+SUMMARY:ACL 2026
+DESCRIPTION:NLP\\n\\nLocation: San Diego\, CA\, USA\\n\\nURL: https://2026.aclweb.org/
+LOCATION:San Diego\, CA\, USA
+URL:https://2026.aclweb.org/
+CATEGORIES:NLP
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-icml-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260706
+SUMMARY:ICML 2026
+DESCRIPTION:ML / Deep Learning\\n\\nLocation: COEX\, Seoul\, South Korea\\n\\nURL: https://icml.cc/
+LOCATION:COEX\, Seoul\, South Korea
+URL:https://icml.cc/
+CATEGORIES:ML / Deep Learning
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ijcai-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260815
+SUMMARY:IJCAI 2026
+DESCRIPTION:AI / General\\n\\nLocation: Bremen\, Germany\\n\\nURL: https://ijcai26.org/
+LOCATION:Bremen\, Germany
+URL:https://ijcai26.org/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ieee-icdl-2026-(intl-conf-on-development-&-learning)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260915
+SUMMARY:IEEE ICDL 2026 (Intl Conf on Development & Learning)
+DESCRIPTION:Robotics / Developmental AI / ML\\n\\nLocation: Kyoto University\, Kyoto\, Japan\\n\\nURL: https://www.ieee-ras.org/event/2026-ieee-international-conference-on-development-and-learning-icdl-67399/
+LOCATION:Kyoto University\, Kyoto\, Japan
+URL:https://www.ieee-ras.org/event/2026-ieee-international-conference-on-development-and-learning-icdl-67399/
+CATEGORIES:Robotics / Developmental AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-iros-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260927
+SUMMARY:IROS 2026
+DESCRIPTION:Robotics\\n\\nLocation: Pittsburgh\, PA\, USA\\n\\nURL: https://2026.ieee-iros.org/
+LOCATION:Pittsburgh\, PA\, USA
+URL:https://2026.ieee-iros.org/
+CATEGORIES:Robotics
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-emnlp-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261024
+SUMMARY:EMNLP 2026
+DESCRIPTION:NLP\\n\\nLocation: Budapest\, Hungary\\n\\nURL: https://2026.emnlp.org/
+LOCATION:Budapest\, Hungary
+URL:https://2026.emnlp.org/
+CATEGORIES:NLP
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-corl-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261109
+SUMMARY:CoRL 2026
+DESCRIPTION:Robotics / ML\\n\\nLocation: Austin\, TX\, USA\\n\\nURL: https://www.corl.org/
+LOCATION:Austin\, TX\, USA
+URL:https://www.corl.org/
+CATEGORIES:Robotics / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-neurips-2026-(40th-annual)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261206
+SUMMARY:NeurIPS 2026 (40th Annual)
+DESCRIPTION:ML / Deep Learning / AI\\n\\nLocation: Sydney\, Australia (+ Atlanta\, Paris)\\n\\nURL: https://neurips.cc/
+LOCATION:Sydney\, Australia (+ Atlanta\, Paris)
+URL:https://neurips.cc/
+CATEGORIES:ML / Deep Learning / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-eccv-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260908
+SUMMARY:ECCV 2026
+DESCRIPTION:Computer Vision\\n\\nLocation: Malmö\, Sweden\\n\\nURL: https://eccv.ecva.net/
+LOCATION:Malmö\, Sweden
+URL:https://eccv.ecva.net/
+CATEGORIES:Computer Vision
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-ml-systems-2026-(6th-intl-conf)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261006
+SUMMARY:AI ML Systems 2026 (6th Intl Conf)
+DESCRIPTION:ML Systems\\n\\nLocation: Lake Como\, Italy\\n\\nURL: https://www.aimlsystems.org/2026/
+LOCATION:Lake Como\, Italy
+URL:https://www.aimlsystems.org/2026/
+CATEGORIES:ML Systems
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ieee-big-data-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261214
+SUMMARY:IEEE Big Data 2026
+DESCRIPTION:AI / Big Data\\n\\nLocation: Phoenix\, AZ\, USA\\n\\nURL: https://bigdataieee.org/
+LOCATION:Phoenix\, AZ\, USA
+URL:https://bigdataieee.org/
+CATEGORIES:AI / Big Data
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-icairml-2026-(2nd-intl-conf-on-ai,-robotics-&-ml)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261109
+SUMMARY:ICAIRML 2026 (2nd Intl Conf on AI\, Robotics & ML)
+DESCRIPTION:Robotics / AI / ML\\n\\nLocation: Rome\, Italy\\n\\nURL: https://www.mindspaceconferences.com/
+LOCATION:Rome\, Italy
+URL:https://www.mindspaceconferences.com/
+CATEGORIES:Robotics / AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-world-ai-cannes-(waicf)-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260211
+DTEND;VALUE=DATE:20260211
+SUMMARY:World AI Cannes (WAICF) 2026
+DESCRIPTION:AI / General\\n\\nLocation: Cannes\, France\\n\\nURL: https://www.worldaicannes.com/
+LOCATION:Cannes\, France
+URL:https://www.worldaicannes.com/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-devworld-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260218
+SUMMARY:AI DevWorld 2026
+DESCRIPTION:AI Engineering\\n\\nLocation: San Jose\, CA\, USA\\n\\nURL: https://aidevworld.com/
+LOCATION:San Jose\, CA\, USA
+URL:https://aidevworld.com/
+CATEGORIES:AI Engineering
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-nvidia-gtc-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260317
+DTEND;VALUE=DATE:20260317
+SUMMARY:NVIDIA GTC 2026
+DESCRIPTION:AI / ML / Deep Learning\\n\\nLocation: SAP Center\, San Jose\, CA\, USA\\n\\nURL: https://www.nvidia.com/gtc/
+LOCATION:SAP Center\, San Jose\, CA\, USA
+URL:https://www.nvidia.com/gtc/
+CATEGORIES:AI / ML / Deep Learning
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-robotics-2026-world-summit@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260326
+DTEND;VALUE=DATE:20260326
+SUMMARY:ROBOTICS-2026 World Summit
+DESCRIPTION:Robotics / AI / ML\\n\\nLocation: Rome\, Italy\\n\\nURL: https://roboticsworldsummit.com/
+LOCATION:Rome\, Italy
+URL:https://roboticsworldsummit.com/
+CATEGORIES:Robotics / AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-humanx-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260406
+SUMMARY:HumanX 2026
+DESCRIPTION:AI / Enterprise AI\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://humanx.co/
+LOCATION:San Francisco\, CA\, USA
+URL:https://humanx.co/
+CATEGORIES:AI / Enterprise AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-engineer-europe-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260408
+SUMMARY:AI Engineer Europe 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: London\, UK\\n\\nURL: https://www.ai.engineer/europe
+LOCATION:London\, UK
+URL:https://www.ai.engineer/europe
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-engineer-miami-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260420
+SUMMARY:AI Engineer Miami 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: Miami\, FL\, USA\\n\\nURL: https://www.ai.engineer/miami
+LOCATION:Miami\, FL\, USA
+URL:https://www.ai.engineer/miami
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-amsterdam-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260420
+SUMMARY:MLcon Amsterdam 2026
+DESCRIPTION:ML / AI\\n\\nLocation: Amsterdam\, Netherlands\\n\\nURL: https://mlconference.ai/amsterdam/
+LOCATION:Amsterdam\, Netherlands
+URL:https://mlconference.ai/amsterdam/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-week-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260420
+SUMMARY:AI Week 2026
+DESCRIPTION:AI / General\\n\\nLocation: Nationwide\, USA (in-person + virtual)\\n\\nURL: https://www.aiweek.com/
+LOCATION:Nationwide\, USA (in-person + virtual)
+URL:https://www.aiweek.com/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-summit-2026-(culturecon)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260421
+DTEND;VALUE=DATE:20260421
+SUMMARY:AI Summit 2026 (CultureCon)
+DESCRIPTION:AI / Future of Work\\n\\nLocation: Madison\, WI\, USA\\n\\nURL: https://www.cultureconusa.org/ai-summit-2026
+LOCATION:Madison\, WI\, USA
+URL:https://www.cultureconusa.org/ai-summit-2026
+CATEGORIES:AI / Future of Work
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-google-cloud-next-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260422
+DTEND;VALUE=DATE:20260422
+SUMMARY:Google Cloud NEXT 2026
+DESCRIPTION:Cloud / AI / LLM\\n\\nLocation: Mandalay Bay Convention Center\, Las Vegas\, NV\, USA\\n\\nURL: https://cloud.google.com/next
+LOCATION:Mandalay Bay Convention Center\, Las Vegas\, NV\, USA
+URL:https://cloud.google.com/next
+CATEGORIES:Cloud / AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-dev-26-(deeplearning.ai)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260428
+DTEND;VALUE=DATE:20260428
+SUMMARY:AI Dev 26 (DeepLearning.AI)
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://ai-dev.deeplearning.ai/
+LOCATION:San Francisco\, CA\, USA
+URL:https://ai-dev.deeplearning.ai/
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-odsc-gen-ai-x-summit-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260428
+DTEND;VALUE=DATE:20260428
+SUMMARY:ODSC Gen AI X Summit 2026
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: Boston\, MA\, USA\\n\\nURL: https://odsc.com/boston/
+LOCATION:Boston\, MA\, USA
+URL:https://odsc.com/boston/
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-hybrid-ai-2026-(machine-learning-week)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260505
+SUMMARY:HYBRID AI 2026 (Machine Learning Week)
+DESCRIPTION:ML / AI / LLM\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://machinelearningweek.com/
+LOCATION:San Francisco\, CA\, USA
+URL:https://machinelearningweek.com/
+CATEGORIES:ML / AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-data-innovation-summit-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260506
+SUMMARY:Data Innovation Summit 2026
+DESCRIPTION:ML / Generative AI / Agentic AI\\n\\nLocation: Stockholm\, Sweden\\n\\nURL: https://datainnovationsummit.com/
+LOCATION:Stockholm\, Sweden
+URL:https://datainnovationsummit.com/
+CATEGORIES:ML / Generative AI / Agentic AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-london-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260511
+DTEND;VALUE=DATE:20260511
+SUMMARY:MLcon London 2026
+DESCRIPTION:ML / AI\\n\\nLocation: London\, UK\\n\\nURL: https://mlconference.ai/london/
+LOCATION:London\, UK
+URL:https://mlconference.ai/london/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-council-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260512
+SUMMARY:AI Council 2026
+DESCRIPTION:AI Engineering\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://aicouncil.com/sf-2026
+LOCATION:San Francisco\, CA\, USA
+URL:https://aicouncil.com/sf-2026
+CATEGORIES:AI Engineering
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-interrupt-2026-(the-agent-conference-by-langchain)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260513
+SUMMARY:Interrupt 2026 (The Agent Conference by LangChain)
+DESCRIPTION:AI Agents / Agentic AI / LLM\\n\\nLocation: The Midway\, San Francisco\, CA\, USA\\n\\nURL: https://interrupt.langchain.com/
+LOCATION:The Midway\, San Francisco\, CA\, USA
+URL:https://interrupt.langchain.com/
+CATEGORIES:AI Agents / Agentic AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-&-big-data-expo-north-america-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260518
+SUMMARY:AI & Big Data Expo North America 2026
+DESCRIPTION:AI / LLM / Generative AI\\n\\nLocation: San Jose\, CA\, USA\\n\\nURL: https://www.techexevent.com/northamerica/
+LOCATION:San Jose\, CA\, USA
+URL:https://www.techexevent.com/northamerica/
+CATEGORIES:AI / LLM / Generative AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-devsummit-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260527
+SUMMARY:AI DevSummit 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: South San Francisco\, CA\, USA\\n\\nURL: https://aidevsummit.co/
+LOCATION:South San Francisco\, CA\, USA
+URL:https://aidevsummit.co/
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-agent-conference-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260504
+DTEND;VALUE=DATE:20260504
+SUMMARY:AI Agent Conference 2026
+DESCRIPTION:AI Agents / Agentic AI / LLM\\n\\nLocation: New York\, NY\, USA\\n\\nURL: https://www.agentconference.com/
+LOCATION:New York\, NY\, USA
+URL:https://www.agentconference.com/
+CATEGORIES:AI Agents / Agentic AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-qcon-ai-boston-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260601
+SUMMARY:QCon AI Boston 2026
+DESCRIPTION:AI Engineering / ML\\n\\nLocation: Boston\, MA\, USA\\n\\nURL: https://boston.qcon.ai/
+LOCATION:Boston\, MA\, USA
+URL:https://boston.qcon.ai/
+CATEGORIES:AI Engineering / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-san-diego-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260601
+SUMMARY:MLcon San Diego 2026
+DESCRIPTION:ML / AI\\n\\nLocation: San Diego\, CA\, USA\\n\\nURL: https://mlconference.ai/san-diego/
+LOCATION:San Diego\, CA\, USA
+URL:https://mlconference.ai/san-diego/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-engineer-melbourne-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260603
+DTEND;VALUE=DATE:20260603
+SUMMARY:AI Engineer Melbourne 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: Federation Square\, Melbourne\, Australia\\n\\nURL: https://webdirections.org/ai-engineer/
+LOCATION:Federation Square\, Melbourne\, Australia
+URL:https://webdirections.org/ai-engineer/
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-new-york-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260604
+SUMMARY:Generative AI Summit New York 2026
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: New York Marriott Marquis\, New York\, NY\, USA\\n\\nURL: https://world.aiacceleratorinstitute.com/location/newyork/
+LOCATION:New York Marriott Marquis\, New York\, NY\, USA
+URL:https://world.aiacceleratorinstitute.com/location/newyork/
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-arize:observe-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260604
+SUMMARY:Arize:Observe 2026
+DESCRIPTION:AI Agents / LLM / Evals / Observability\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://arize.com/observe-2026/
+LOCATION:San Francisco\, CA\, USA
+URL:https://arize.com/observe-2026/
+CATEGORIES:AI Agents / LLM / Evals / Observability
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-con-usa-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260607
+SUMMARY:AI Con USA 2026
+DESCRIPTION:AI / LLM / Generative AI\\n\\nLocation: Seattle\, WA\, USA\\n\\nURL: https://aiconusa.com/
+LOCATION:Seattle\, WA\, USA
+URL:https://aiconusa.com/
+CATEGORIES:AI / LLM / Generative AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-devsummit-new-york-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260609
+SUMMARY:AI DevSummit New York 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: TWA Hotel\, New York City\, NY\, USA\\n\\nURL: https://aidevsummit.co/newyork/
+LOCATION:TWA Hotel\, New York City\, NY\, USA
+URL:https://aidevsummit.co/newyork/
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-data-+-ai-summit-2026-(databricks)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260615
+SUMMARY:Data + AI Summit 2026 (Databricks)
+DESCRIPTION:Data / AI / LLM\\n\\nLocation: Moscone Center\, San Francisco\, CA\, USA\\n\\nURL: https://www.databricks.com/dataaisummit
+LOCATION:Moscone Center\, San Francisco\, CA\, USA
+URL:https://www.databricks.com/dataaisummit
+CATEGORIES:Data / AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-toronto-machine-learning-summit-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260616
+SUMMARY:Toronto Machine Learning Summit 2026
+DESCRIPTION:ML / AI\\n\\nLocation: Toronto\, Canada\\n\\nURL: https://www.torontomachinelearning.com/
+LOCATION:Toronto\, Canada
+URL:https://www.torontomachinelearning.com/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-munich-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260622
+SUMMARY:MLcon Munich 2026
+DESCRIPTION:ML / AI\\n\\nLocation: Munich\, Germany\\n\\nURL: https://mlconference.ai/munich/
+LOCATION:Munich\, Germany
+URL:https://mlconference.ai/munich/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-engineer-world's-fair-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260629
+SUMMARY:AI Engineer World's Fair 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://www.ai.engineer/worldsfair
+LOCATION:San Francisco\, CA\, USA
+URL:https://www.ai.engineer/worldsfair
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-genai-summit-sf-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260718
+SUMMARY:GenAI Summit SF 2026
+DESCRIPTION:Generative AI / LLM / Agentic AI\\n\\nLocation: Palace of Fine Arts\, San Francisco\, CA\, USA\\n\\nURL: https://genaisummit.ai/
+LOCATION:Palace of Fine Arts\, San Francisco\, CA\, USA
+URL:https://genaisummit.ai/
+CATEGORIES:Generative AI / LLM / Agentic AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai4-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260804
+SUMMARY:Ai4 2026
+DESCRIPTION:AI / Enterprise AI / LLM\\n\\nLocation: The Venetian\, Las Vegas\, NV\, USA\\n\\nURL: https://ai4.io/
+LOCATION:The Venetian\, Las Vegas\, NV\, USA
+URL:https://ai4.io/
+CATEGORIES:AI / Enterprise AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-align-ai-summit-sf-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260819
+SUMMARY:Align AI Summit SF 2026
+DESCRIPTION:AI / Agentic AI / LLM\\n\\nLocation: San Francisco\, CA\, USA\\n\\nURL: https://alignaisummit.com/
+LOCATION:San Francisco\, CA\, USA
+URL:https://alignaisummit.com/
+CATEGORIES:AI / Agentic AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-los-angeles-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260826
+SUMMARY:Generative AI Summit Los Angeles 2026
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: Los Angeles\, CA\, USA\\n\\nURL: https://world.aiacceleratorinstitute.com/location/losangeles
+LOCATION:Los Angeles\, CA\, USA
+URL:https://world.aiacceleratorinstitute.com/location/losangeles
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-the-ai-enterprise-conference-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260902
+SUMMARY:The AI Enterprise Conference 2026
+DESCRIPTION:Enterprise AI / AI Engineering\\n\\nLocation: New York\, NY\, USA\\n\\nURL: https://datascienceconnect.com/
+LOCATION:New York\, NY\, USA
+URL:https://datascienceconnect.com/
+CATEGORIES:Enterprise AI / AI Engineering
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-agntcon-+-mcpcon-europe-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260917
+SUMMARY:AGNTCon + MCPCon Europe 2026
+DESCRIPTION:AI Agents / Agentic AI / MCP / LLM\\n\\nLocation: RAI Amsterdam\, Amsterdam\, Netherlands\\n\\nURL: https://events.linuxfoundation.org/agntcon-mcpcon-europe/
+LOCATION:RAI Amsterdam\, Amsterdam\, Netherlands
+URL:https://events.linuxfoundation.org/agntcon-mcpcon-europe/
+CATEGORIES:AI Agents / Agentic AI / MCP / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-new-york-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260928
+SUMMARY:MLcon New York 2026
+DESCRIPTION:ML / AI\\n\\nLocation: New York\, NY\, USA\\n\\nURL: https://mlconference.ai/new-york/
+LOCATION:New York\, NY\, USA
+URL:https://mlconference.ai/new-york/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-the-ai-conference-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20260930
+SUMMARY:The AI Conference 2026
+DESCRIPTION:AI / LLM / Generative AI\\n\\nLocation: Pier 48\, San Francisco\, CA\, USA\\n\\nURL: https://aiconference.com/
+LOCATION:Pier 48\, San Francisco\, CA\, USA
+URL:https://aiconference.com/
+CATEGORIES:AI / LLM / Generative AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-devcon-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261007
+SUMMARY:ai devCon 2026
+DESCRIPTION:AI Engineering / LLM\\n\\nLocation: CityCube Berlin\, Germany\\n\\nURL: https://ai.berlin/events/event/ai-devcon-2026-ai-lifecycle-conference-for-developers
+LOCATION:CityCube Berlin\, Germany
+URL:https://ai.berlin/events/event/ai-devcon-2026-ai-lifecycle-conference-for-developers
+CATEGORIES:AI Engineering / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mit-ai-conference-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261017
+SUMMARY:MIT AI Conference 2026
+DESCRIPTION:AI / Enterprise AI / Applied AI\\n\\nLocation: Computer History Museum\, Mountain View\, CA\, USA\\n\\nURL: https://www.mitaiconference.org/
+LOCATION:Computer History Museum\, Mountain View\, CA\, USA
+URL:https://www.mitaiconference.org/
+CATEGORIES:AI / Enterprise AI / Applied AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-agntcon-+-mcpcon-north-america-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261022
+SUMMARY:AGNTCon + MCPCon North America 2026
+DESCRIPTION:AI Agents / Agentic AI / MCP / LLM\\n\\nLocation: San Jose\, CA\, USA\\n\\nURL: https://events.linuxfoundation.org/agntcon-mcpcon-north-america/
+LOCATION:San Jose\, CA\, USA
+URL:https://events.linuxfoundation.org/agntcon-mcpcon-north-america/
+CATEGORIES:AI Agents / Agentic AI / MCP / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-live:-the-london-summit-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261020
+SUMMARY:AI LIVE: The London Summit 2026
+DESCRIPTION:AI / Enterprise AI / Generative AI\\n\\nLocation: Olympia London\, London\, UK\\n\\nURL: https://aimagazine.com/events/ai-live
+LOCATION:Olympia London\, London\, UK
+URL:https://aimagazine.com/events/ai-live
+CATEGORIES:AI / Enterprise AI / Generative AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-aiml-2026-(united-research-forum)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261026
+SUMMARY:AIML-2026 (United Research Forum)
+DESCRIPTION:AI / ML\\n\\nLocation: Paris\, France\\n\\nURL: https://unitedresearchforum.com/ai-conference/
+LOCATION:Paris\, France
+URL:https://unitedresearchforum.com/ai-conference/
+CATEGORIES:AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-toronto-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261119
+SUMMARY:Generative AI Summit Toronto 2026
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: Courtyard Toronto Downtown\, Toronto\, Canada\\n\\nURL: https://world.aiacceleratorinstitute.com/location/toronto/
+LOCATION:Courtyard Toronto Downtown\, Toronto\, Canada
+URL:https://world.aiacceleratorinstitute.com/location/toronto/
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-mlcon-berlin-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261123
+SUMMARY:MLcon Berlin 2026
+DESCRIPTION:ML / AI\\n\\nLocation: Berlin\, Germany\\n\\nURL: https://mlconference.ai/berlin/
+LOCATION:Berlin\, Germany
+URL:https://mlconference.ai/berlin/
+CATEGORIES:ML / AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-london-2026@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261201
+SUMMARY:Generative AI Summit London 2026
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: London\, UK\\n\\nURL: https://world.aiacceleratorinstitute.com/location/london
+LOCATION:London\, UK
+URL:https://world.aiacceleratorinstitute.com/location/london
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-agentic-ai-summit-london-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270128
+SUMMARY:Agentic AI Summit London 2027
+DESCRIPTION:Generative AI / Agentic AI\\n\\nLocation: London\, UK\\n\\nURL: https://world.aiacceleratorinstitute.com/location/london
+LOCATION:London\, UK
+URL:https://world.aiacceleratorinstitute.com/location/london
+CATEGORIES:Generative AI / Agentic AI
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-devworld-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270209
+SUMMARY:AI DevWorld 2027
+DESCRIPTION:AI Engineering\\n\\nLocation: Santa Clara\, CA\, USA\\n\\nURL: https://aidevworld.com/
+LOCATION:Santa Clara\, CA\, USA
+URL:https://aidevworld.com/
+CATEGORIES:AI Engineering
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-washington-d.c.-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270224
+SUMMARY:Generative AI Summit Washington D.C. 2027
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: Washington\, D.C.\, USA\\n\\nURL: https://world.aiacceleratorinstitute.com/location/washington
+LOCATION:Washington\, D.C.\, USA
+URL:https://world.aiacceleratorinstitute.com/location/washington
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-humanx-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270307
+SUMMARY:HumanX 2027
+DESCRIPTION:AI / Enterprise AI / LLM\\n\\nLocation: Mandalay Bay\, Las Vegas\, NV\, USA\\n\\nURL: https://humanx.co/
+LOCATION:Mandalay Bay\, Las Vegas\, NV\, USA
+URL:https://humanx.co/
+CATEGORIES:AI / Enterprise AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-generative-ai-summit-austin-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270325
+SUMMARY:Generative AI Summit Austin 2027
+DESCRIPTION:Generative AI / LLM\\n\\nLocation: Austin\, TX\, USA\\n\\nURL: https://world.aiacceleratorinstitute.com/
+LOCATION:Austin\, TX\, USA
+URL:https://world.aiacceleratorinstitute.com/
+CATEGORIES:Generative AI / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-builders-summit:-healthcare-boston-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270325
+SUMMARY:AI Builders Summit: Healthcare Boston 2027
+DESCRIPTION:AI / Healthcare / LLM\\n\\nLocation: Convene One Boston Place\, Boston\, MA\, USA\\n\\nURL: https://world.aiacceleratorinstitute.com/location/healthcareboston/
+LOCATION:Convene One Boston Place\, Boston\, MA\, USA
+URL:https://world.aiacceleratorinstitute.com/location/healthcareboston/
+CATEGORIES:AI / Healthcare / LLM
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ai-agent-&-copilot-summit-na-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270330
+SUMMARY:AI Agent & Copilot Summit NA 2027
+DESCRIPTION:AI Agents / Enterprise AI / Copilot\\n\\nLocation: Gaylord Pacific\, San Diego\, CA\, USA\\n\\nURL: https://copilot.summitna.com/
+LOCATION:Gaylord Pacific\, San Diego\, CA\, USA
+URL:https://copilot.summitna.com/
+CATEGORIES:AI Agents / Enterprise AI / Copilot
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-aaiml-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270329
+SUMMARY:AAIML 2027
+DESCRIPTION:AI / ML\\n\\nLocation: Nihon University\, Tokyo\, Japan\\n\\nURL: https://www.aaiml.net/
+LOCATION:Nihon University\, Tokyo\, Japan
+URL:https://www.aaiml.net/
+CATEGORIES:AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-⭐-new-airc-2027-(8th-intl-conf-on-ai,-robotics-&-control)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270406
+SUMMARY:⭐ NEW AIRC 2027 (8th Intl Conf on AI\, Robotics & Control)
+DESCRIPTION:AI / Robotics / Control\\n\\nLocation: Arizona State University\, Tempe\, AZ\, USA\\n\\nURL: https://www.airc.org/
+LOCATION:Arizona State University\, Tempe\, AZ\, USA
+URL:https://www.airc.org/
+CATEGORIES:AI / Robotics / Control
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-aim-2027-(4th-intl-conf-on-ai-&-ml)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270426
+SUMMARY:AIM-2027 (4th Intl Conf on AI & ML)
+DESCRIPTION:AI / ML\\n\\nLocation: Orlando\, FL\, USA\\n\\nURL: https://artificialintelligence.unitedscientificgroup.org/
+LOCATION:Orlando\, FL\, USA
+URL:https://artificialintelligence.unitedscientificgroup.org/
+CATEGORIES:AI / ML
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-wacv-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270104
+SUMMARY:WACV 2027
+DESCRIPTION:Computer Vision\\n\\nLocation: Location TBA\\n\\nURL: https://wacv.thecvf.com/
+LOCATION:Location TBA
+URL:https://wacv.thecvf.com/
+CATEGORIES:Computer Vision
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-icmlsc-2027-(11th-intl-conf-on-ml-&-soft-computing)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270129
+SUMMARY:ICMLSC 2027 (11th Intl Conf on ML & Soft Computing)
+DESCRIPTION:Machine Learning\\n\\nLocation: Tokyo\, Japan\\n\\nURL: https://icmlsc.org/
+LOCATION:Tokyo\, Japan
+URL:https://icmlsc.org/
+CATEGORIES:Machine Learning
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-aaai-2027-(41st-annual)@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270216
+SUMMARY:AAAI 2027 (41st Annual)
+DESCRIPTION:AI / General\\n\\nLocation: Montréal\, QC\, Canada\\n\\nURL: https://aaai.org/
+LOCATION:Montréal\, QC\, Canada
+URL:https://aaai.org/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-nvidia-gtc-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:2027032027
+DTEND;VALUE=DATE:2027032027
+SUMMARY:NVIDIA GTC 2027
+DESCRIPTION:AI / General\\n\\nLocation: San Jose\, CA\, USA\\n\\nURL: https://www.nvidia.com/gtc/
+LOCATION:San Jose\, CA\, USA
+URL:https://www.nvidia.com/gtc/
+CATEGORIES:AI / General
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-chief-ai-officer-summit-dubai-2027@ai-events-2026
+DTSTAMP:20260618T043508Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270514
+SUMMARY:Chief AI Officer Summit Dubai 2027
+DESCRIPTION:Enterprise AI / Agentic AI / Leadership\\n\\nLocation: Dubai\, UAE\\n\\nURL: https://world.aiacceleratorinstitute.com/location/dubai/
+LOCATION:Dubai\, UAE
+URL:https://world.aiacceleratorinstitute.com/location/dubai/
+CATEGORIES:Enterprise AI / Agentic AI / Leadership
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
