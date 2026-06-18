@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-06-17
+> **Last updated:** 2026-06-18
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 -
@@ -27,15 +27,6 @@
 | AI ML Systems 2026 (6th Intl Conf) | Oct 6–9, 2026 | Lake Como, Italy | ML Systems | https://www.aimlsystems.org/2026/ |
 | IEEE Big Data 2026 | Dec 14–17, 2026 | Phoenix, AZ, USA | AI / Big Data | https://bigdataieee.org/ |
 | ICAIRML 2026 (2nd Intl Conf on AI, Robotics & ML) | Nov 9–11, 2026 | Rome, Italy | Robotics / AI / ML | https://www.mindspaceconferences.com/ |
-| WACV 2026 | Mar 6-10, 2026 | Tucson, AZ, USA | Computer Vision | https://wacv.thecvf.com/Conferences/2026 |
-| ICASSP 2026 | May 4-8, 2026 | Barcelona, Spain | Signal Processing / AI | https://2026.ieeeicassp.org/ |
-| MLSys 2026 | May 17-22, 2026 | Bellevue, WA, USA | ML Systems / AI Infrastructure | https://mlsys.org/Conferences/2026 |
-| KDD 2026 | Aug 9-13, 2026 | Jeju, South Korea | Data Mining / ML / AI | https://kdd2026.kdd.org/ |
-| SIGGRAPH 2026 | Aug 2026 | Los Angeles, CA, USA | Computer Graphics / AI | https://s2026.siggraph.org/ |
-| MICCAI 2026 | Oct 4-8, 2026 | Abu Dhabi, UAE | Medical AI / Computer Vision | https://conferences.miccai.org/2026/ |
-| CIKM 2026 | Nov 7-11, 2026 | Rome, Italy | Data / Knowledge / ML | https://cikm2026.diag.uniroma1.it/ |
-| PAKDD 2026 | Jun 9-12, 2026 | Hong Kong | Data Mining / ML | https://pakdd2026.org/ |
-| ICSE 2026 | Apr 12-18, 2026 | Rio de Janeiro, Brazil | Software Engineering / AI | https://conf.researchr.org/home/icse-2026 |
 
 -
 
@@ -93,11 +84,18 @@
 | MLcon Berlin 2026 | Nov 23–27, 2026 | Berlin, Germany | ML / AI | https://mlconference.ai/berlin/ |
 | Generative AI Summit London 2026 | Dec 1, 2026 | London, UK | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/london |
 | BIG.AI@MIT 2026 | 2026 (TBD) | MIT, Cambridge, MA, USA | Generative AI / LLM | https://ide.mit.edu/events/2026-the-business-implications-of-generative-ai-mit-big-aimit/ |
-| AMLD 2026 (Applied ML Days) | Feb 10-12, 2026 | Lausanne, Switzerland | ML / AI / Deep Learning | https://www.appliedmldays.org/ |
-| AI World Congress 2026 | Jun 23-24, 2026 | London, UK | Enterprise AI / General | https://worldaicouncil.com/ |
-| Raise Summit 2026 | Jul 8-9, 2026 | Paris, France | AI / General | https://www.raisesummit.com/ |
-| HumanX Europe 2026 | Sep 22-24, 2026 | Amsterdam, Netherlands | AI / Enterprise AI | https://humanx.co/europe |
-| Swiss AI Summit 2026 | Nov 17, 2026 | Zurich, Switzerland | AI / General | https://www.swiss-ai-summit.ch/ |
+| MLSys 2026 | 2026 (TBD) | TBD | ML Systems | https://mlsys.org/ |
+| ⭐ NEW Agentic AI Summit New York 2026 | Jun 4, 2026 | New York, NY, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticainewyork |
+| ⭐ NEW Agentic AI Summit Los Angeles 2026 | Aug 26, 2026 | Los Angeles, CA, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticailosangeles |
+| ⭐ NEW Chief AI Officer Summit Berlin 2026 | Sep 15, 2026 | Berlin, Germany | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caioberlin |
+| ⭐ NEW Generative AI Summit Berlin 2026 | Sep 15, 2026 | Berlin, Germany | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/berlin |
+| ⭐ NEW Agentic AI Summit Berlin 2026 | Sep 15, 2026 | Berlin, Germany | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaiberlin |
+| ⭐ NEW Agentic AI in Financial Services Summit 2026 | Oct 1, 2026 | New York, NY, USA | Agentic AI / Financial Services | https://world.aiacceleratorinstitute.com/location/agenticfinance |
+| ⭐ NEW Generative AI Summit Boston 2026 | Oct 29, 2026 | Boston, MA, USA | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/boston |
+| ⭐ NEW Chief AI Officer Summit Boston 2026 | Oct 29, 2026 | Boston, MA, USA | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caioboston |
+| ⭐ NEW Agentic AI Summit Boston 2026 | Oct 29, 2026 | Boston, MA, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaiboston |
+| ⭐ NEW Agentic AI Summit Toronto 2026 | Nov 12, 2026 | Toronto, ON, Canada | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaitoronto |
+| ⭐ NEW Chief AI Officer Summit London 2026 | Dec 1, 2026 | London, UK | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caiolondon |
 
 -
 
@@ -113,7 +111,7 @@
 | AI Builders Summit: Healthcare Boston 2027 | Mar 25, 2027 | Convene One Boston Place, Boston, MA, USA | AI / Healthcare / LLM | https://world.aiacceleratorinstitute.com/location/healthcareboston/ |
 | AI Agent & Copilot Summit NA 2027 | Mar 30–Apr 1, 2027 | Gaylord Pacific, San Diego, CA, USA | AI Agents / Enterprise AI / Copilot | https://copilot.summitna.com/ |
 | AAIML 2027 | Mar 29–31, 2027 | Nihon University, Tokyo, Japan | AI / ML | https://www.aaiml.net/ |
-| ⭐ NEW AIRC 2027 (8th Intl Conf on AI, Robotics & Control) | Apr 6–8, 2027 | Arizona State University, Tempe, AZ, USA | AI / Robotics / Control | https://www.airc.org/ |
+| AIRC 2027 (8th Intl Conf on AI, Robotics & Control) | Apr 6–8, 2027 | Arizona State University, Tempe, AZ, USA | AI / Robotics / Control | https://www.airc.org/ |
 | AIM-2027 (4th Intl Conf on AI & ML) | Apr 26–28, 2027 | Orlando, FL, USA | AI / ML | https://artificialintelligence.unitedscientificgroup.org/ |
 | AI Engineer Europe 2027 | 2027 (TBD) | Europe (TBD) | AI Engineering | https://www.ai.engineer/europe |
 | WACV 2027 | Jan 4–8, 2027 | Location TBA | Computer Vision | https://wacv.thecvf.com/ |
@@ -121,6 +119,10 @@
 | AAAI 2027 (41st Annual) | Feb 16–23, 2027 | Montréal, QC, Canada | AI / General | https://aaai.org/ |
 | NVIDIA GTC 2027 | Mar 2027 (TBA) | San Jose, CA, USA | AI / General | https://www.nvidia.com/gtc/ |
 | Chief AI Officer Summit Dubai 2027 | May 14, 2027 | Dubai, UAE | Enterprise AI / Agentic AI / Leadership | https://world.aiacceleratorinstitute.com/location/dubai/ |
+| ⭐ NEW Chief AI Officer Summit San Jose 2027 | Apr 14, 2027 | San Jose, CA, USA | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caiosiliconvalley |
+| ⭐ NEW Agentic AI Summit San Jose 2027 | Apr 14, 2027 | San Jose, CA, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaisiliconvalley |
+| ⭐ NEW Generative AI Summit San Jose 2027 | Apr 14, 2027 | San Jose, CA, USA | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/siliconvalley |
+| ⭐ NEW Chief AI Officer Summit New York 2027 | Jun 3, 2027 | New York, NY, USA | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caionewyork |
 
 -
 
@@ -128,6 +130,7 @@
 
 | Date | Action | Events Added |
 |-|-|-|
+| 2026-06-18 | Daily crawl update | 15 new events added (AI Accelerator Institute summit series): Agentic AI Summit New York (Jun 4, 2026), Agentic AI Summit Los Angeles (Aug 26, 2026), Chief AI Officer/Generative AI/Agentic AI Summit Berlin (Sep 15, 2026), Agentic AI in Financial Services Summit New York (Oct 1, 2026), Generative AI/Chief AI Officer/Agentic AI Summit Boston (Oct 29, 2026), Agentic AI Summit Toronto (Nov 12, 2026), Chief AI Officer Summit London (Dec 1, 2026), Chief AI Officer/Agentic AI/Generative AI Summit San Jose (Apr 14, 2027), Chief AI Officer Summit New York (Jun 3, 2027) |
 | 2026-06-17 | Daily crawl update | 1 new event added: AIRC 2027 (8th Intl Conf on AI, Robotics & Control) (Apr 6–8, 2027, Arizona State University, Tempe, AZ) |
 | 2026-06-15 | Daily crawl update | 2 new events added: AI Week 2026 (Apr 20–24, 2026, nationwide USA), AI Summit 2026 / CultureCon (Apr 21, 2026, Madison, WI) |
 | 2026-06-13 | Daily crawl update | 1 new event added: IEEE ICDL 2026 (Intl Conf on Development & Learning) (Sep 15–18, 2026, Kyoto, Japan) |
