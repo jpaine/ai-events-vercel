@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# AI Events Daily Sync Script with Discord Notifications
-# Purpose: Fetch latest markdown, commit, push, deploy, and notify via Discord
-
 set -euo pipefail
 
 PROJECT_DIR="/Users/jeffreypaine/ALL PROJECTS/AI Events"
@@ -10,174 +7,137 @@ LOG_FILE="$PROJECT_DIR/.sync-log.txt"
 REPO_URL="https://raw.githubusercontent.com/jpaine/ai-events/main/ai-events-2026.md"
 MARKDOWN_FILE="$PROJECT_DIR/public/ai-events-2026.md"
 CURL_TIMEOUT=30
+SITE_URL="https://ai-events-vercel.vercel.app"
 
-# Cleanup temp files on exit
+# Load secrets (NOTIFY_SECRET, RESEND_API_KEY)
+if [ -f "$PROJECT_DIR/.sync-env" ]; then
+    set -a; source "$PROJECT_DIR/.sync-env"; set +a
+fi
+
 cleanup() {
     rm -f "$MARKDOWN_FILE.tmp" "$MARKDOWN_FILE.verify"
 }
 trap cleanup EXIT
 
-# Logging functions
 log() {
     echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
 }
 
 error_exit() {
-    log "❌ ERROR: $1"
+    log "ERROR: $1"
     log "=== Sync Failed ==="
     exit 1
 }
 
-success_exit() {
-    log "✅ $1"
-    
-    # Post to Discord webhook if configured
-    if [ -n "${DISCORD_WEBHOOK_URL:-}" ]; then
-        log "📢 Posting update to Discord..."
-        
-        # Get the last updated date from markdown
-        LAST_UPDATED=$(grep "Last updated:" "$MARKDOWN_FILE" 2>/dev/null | sed 's/.*Last updated: //' | cut -d' ' -f1 || echo "2026-06-13")
-        
-        # Create Discord embed message
-        DISCORD_MESSAGE='{
-  "content": "✨ **AI Events Updated!**",
-  "embeds": [{
-    "title": "🎯 AI Events 2026 - New Content Available",
-    "description": "The AI Events tracker has been updated with the latest conference information.",
-    "color": 5865F2,
-    "fields": [
-      {
-        "name": "📅 Last Updated",
-        "value": "'$LAST_UPDATED'",
-        "inline": true
-      },
-      {
-        "name": "🎪 Total Events",
-        "value": "70+",
-        "inline": true
-      },
-      {
-        "name": "🔗 View All Events",
-        "value": "[https://ai-events-vercel.vercel.app](https://ai-events-vercel.vercel.app)",
-        "inline": false
-      }
-    ],
-    "footer": {
-      "text": "AI Events Tracker - Daily Sync"
-    }
-  }]
-}'
-        
-        if curl -X POST "$DISCORD_WEBHOOK_URL" \
-          -H 'Content-Type: application/json' \
-          -d "$DISCORD_MESSAGE" 2>/dev/null; then
-          log "✓ Discord notification sent successfully"
-        else
-          log "⚠ Failed to send Discord notification"
-        fi
+notify_subscribers() {
+    local new_events_json="$1"
+    local total="$2"
+
+    if [ -z "${NOTIFY_SECRET:-}" ]; then
+        log "⚠ NOTIFY_SECRET not set — skipping email notification"
+        return
     fi
-    
-    log "=== Sync Complete (Success) ==="
-    exit 0
+
+    log "Notifying email subscribers..."
+    local payload="{\"secret\":\"$NOTIFY_SECRET\",\"newEvents\":$new_events_json,\"totalEvents\":$total}"
+    local result
+    result=$(curl -m 30 -s -X POST "$SITE_URL/api/notify" \
+        -H "Content-Type: application/json" \
+        -d "$payload" 2>/dev/null || echo '{"error":"curl failed"}')
+    log "Notify response: $result"
 }
 
 log "=== Starting Daily Sync ==="
 
-# Navigate to project directory
 cd "$PROJECT_DIR" || error_exit "Cannot navigate to project directory"
-log "✓ In project directory: $PROJECT_DIR"
 
 # Configure git
-if [ -z "$(git config user.name)" ]; then
-    git config user.name "AI Events Sync Bot"
-    log "✓ Git user name configured"
-fi
-if [ -z "$(git config user.email)" ]; then
-    git config user.email "sync@ai-events.local"
-    log "✓ Git email configured"
-fi
+[ -z "$(git config user.name)" ]  && git config user.name "AI Events Sync Bot"
+[ -z "$(git config user.email)" ] && git config user.email "sync@ai-events.local"
 
-# Ensure on main branch
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [ "$CURRENT_BRANCH" != "main" ]; then
-    git checkout main || error_exit "Failed to checkout main branch"
-fi
-log "✓ On main branch"
+[ "$CURRENT_BRANCH" != "main" ] && git checkout main
 
-# Fetch latest markdown
-log "Fetching latest markdown from GitHub..."
+log "Fetching latest markdown..."
 if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
     error_exit "Failed to fetch markdown"
 fi
+[ ! -s "$MARKDOWN_FILE.tmp" ] && error_exit "Downloaded file is empty"
 
-if [ ! -s "$MARKDOWN_FILE.tmp" ]; then
-    error_exit "Downloaded file is empty"
-fi
-log "✓ Downloaded markdown file"
-
-# Normalize character encoding
-log "Normalizing character encoding..."
+# Normalize encoding
 cat "$MARKDOWN_FILE.tmp" | \
-  sed 's/[À-ÿ]*–[À-ÿ]*/–/g' | \
   sed 's/â€"/-/g' | \
-  sed 's/Ã¢ÃÃ/-/g' | \
-  sed 's/ÃÃÃÃ¢ÃÃÃÃÃÃÃÃ/-/g' | \
-  sed 's/[[:space:]]*-[[:space:]]*/-/g' | \
-  sed 's/--*/-/g' > "$MARKDOWN_FILE.verify"
+  sed 's/–/-/g' | \
+  sed 's/Â//g' > "$MARKDOWN_FILE.verify"
 
 if [ -f "$MARKDOWN_FILE.verify" ] && grep -q "2026" "$MARKDOWN_FILE.verify"; then
     mv "$MARKDOWN_FILE.verify" "$MARKDOWN_FILE"
-    log "✓ File encoding normalized"
 else
-    error_exit "Character normalization failed"
+    error_exit "Encoding normalization produced invalid file"
 fi
 
-# Check if file changed
+# Check for changes
 if git diff --quiet "$MARKDOWN_FILE" HEAD -- "$MARKDOWN_FILE" 2>/dev/null; then
-    success_exit "No changes detected - skipping deploy"
+    log "No changes detected — skipping deploy"
+    log "=== Sync Complete (No changes) ==="
+    exit 0
 fi
 
-log "✓ Changes detected"
+log "Changes detected"
+
+# Snapshot new event rows from diff before committing
+NEW_EVENTS_RAW=$(git diff "$MARKDOWN_FILE" | grep "^+|" | grep -v "^+|[-|]" | grep -v "^+| Event |" || true)
+
+# Build JSON array of new events
+NEW_EVENTS_JSON="["
+FIRST=true
+NEW_COUNT=0
+while IFS= read -r line; do
+    NAME=$(echo "$line"  | cut -d'|' -f2 | sed 's/^ *//;s/ *$//')
+    DATES=$(echo "$line" | cut -d'|' -f3 | sed 's/^ *//;s/ *$//')
+    LOC=$(echo "$line"   | cut -d'|' -f4 | sed 's/^ *//;s/ *$//')
+    [ -z "$NAME" ] || [ "$NAME" = "Event" ] && continue
+    NAME_ESC=$(echo "$NAME"  | sed 's/"/\\"/g')
+    DATES_ESC=$(echo "$DATES" | sed 's/"/\\"/g')
+    LOC_ESC=$(echo "$LOC"    | sed 's/"/\\"/g')
+    [ "$FIRST" = false ] && NEW_EVENTS_JSON="$NEW_EVENTS_JSON,"
+    NEW_EVENTS_JSON="$NEW_EVENTS_JSON{\"name\":\"$NAME_ESC\",\"dates\":\"$DATES_ESC\",\"location\":\"$LOC_ESC\"}"
+    FIRST=false
+    NEW_COUNT=$((NEW_COUNT + 1))
+done <<< "$NEW_EVENTS_RAW"
+NEW_EVENTS_JSON="$NEW_EVENTS_JSON]"
 
 # Commit and push
-git add "$MARKDOWN_FILE" || error_exit "Failed to stage changes"
-log "✓ Changes staged"
+git add "$MARKDOWN_FILE"
+git commit -m "Daily sync: Update AI Events content - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+log "Committed changes"
 
-COMMIT_MSG="Daily sync: Update AI Events content - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-git commit -m "$COMMIT_MSG" || error_exit "Failed to create commit"
-log "✓ Commit created"
-
-COMMIT_SHA=$(git rev-parse HEAD)
-
-log "Pushing to GitHub..."
 if ! git push origin main 2>&1 | grep -v "^hint:" | tee -a "$LOG_FILE"; then
-    log "⚠ Push failed, attempting recovery..."
-    if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
-        git rebase --abort || log "⚠ Rebase abort failed"
-    fi
     git pull --rebase origin main || error_exit "Failed to pull/rebase"
     git push origin main || error_exit "Failed to push after rebase"
 fi
-log "✓ Pushed to GitHub"
+log "Pushed to GitHub"
 
-# Generate ICS calendar file
-log "Generating ICS calendar file..."
-if ! node scripts/generate-ics.js 2>&1 | tee -a "$LOG_FILE"; then
-    log "⚠ ICS generation failed, continuing anyway..."
+# Regenerate ICS
+if node scripts/generate-ics.js 2>&1 | tee -a "$LOG_FILE"; then
+    git add public/ai-events-2026.ics 2>/dev/null || true
+    git commit -m "Regenerate ICS calendar" 2>/dev/null || true
+    git push origin main 2>/dev/null || true
 fi
-git add public/ai-events-2026.ics 2>/dev/null || true
 
-# Deploy to Vercel
+# Deploy
 log "Deploying to Vercel..."
-DEPLOY_LOG=$(mktemp)
-if ! vercel deploy --prod --yes 2>&1 | tee "$DEPLOY_LOG" | tail -5 | tee -a "$LOG_FILE"; then
+if ! vercel deploy --prod --yes 2>&1 | tail -5 | tee -a "$LOG_FILE"; then
     error_exit "Vercel deployment failed"
 fi
-log "✓ Deployed to Vercel"
+log "Deployed"
 
-# Verify deployment
-if curl -m 10 -s "https://ai-events-vercel.vercel.app" 2>/dev/null | grep -q "AI / ML / LLM / Robotics Events"; then
-    log "✓ Deployment verified"
+# Notify subscribers if new events were added
+TOTAL_EVENTS=$(grep -c "^|" "$MARKDOWN_FILE" 2>/dev/null || echo "0")
+if [ "$NEW_COUNT" -gt 0 ]; then
+    notify_subscribers "$NEW_EVENTS_JSON" "$TOTAL_EVENTS"
+else
+    log "No new events detected — skipping subscriber notification"
 fi
 
-success_exit "All tasks completed successfully"
+log "=== Sync Complete ==="

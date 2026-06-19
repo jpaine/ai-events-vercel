@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs'
 import NavBar from './components/NavBar'
 import EventsTable from './components/EventsTable'
+import SubscribeForm from './components/SubscribeForm'
 
 const MONTHS = { jan:1, feb:2, mar:3, apr:4, may:5, jun:6, jul:7, aug:8, sep:9, oct:10, nov:11, dec:12 }
 
@@ -102,6 +103,10 @@ export default function Home() {
               <a href={icsUrl} className="cta-outline">
                 Download ICS
               </a>
+            </div>
+            <div className="hero-subscribe">
+              <div className="hero-subscribe-label">Get emailed when new events are added</div>
+              <SubscribeForm />
             </div>
             <div className="hero-stats">
               <div className="hero-stat">

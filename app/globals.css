@@ -176,7 +176,20 @@ a {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-subscribe {
   margin-bottom: 36px;
+}
+
+.hero-subscribe-label {
+  font-size: 11px;
+  color: #484f58;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .cta-primary {
