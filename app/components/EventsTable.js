@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, Fragment } from 'react'
 
 const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -178,8 +178,8 @@ export default function EventsTable({ events }) {
                 </thead>
                 <tbody>
                   {section.groups.map(({ month, events: groupEvents }) => (
-                    <>
-                      <tr key={`m-${month}`} className="et-month-row">
+                    <Fragment key={month}>
+                      <tr className="et-month-row">
                         <td colSpan={4}>
                           <span className={`et-month-label${isCurrent(month, section.id) ? ' current' : ''}${isPast(month, section.id) ? ' past' : ''}`}>
                             {isCurrent(month, section.id) && <span className="et-pulse" />}
@@ -216,7 +216,7 @@ export default function EventsTable({ events }) {
                           </td>
                         </tr>
                       ))}
-                    </>
+                    </Fragment>
                   ))}
                 </tbody>
               </table>
