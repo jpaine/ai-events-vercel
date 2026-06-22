@@ -27,6 +27,15 @@
 | AI ML Systems 2026 (6th Intl Conf) | Oct 6â9, 2026 | Lake Como, Italy | ML Systems | https://www.aimlsystems.org/2026/ |
 | IEEE Big Data 2026 | Dec 14â17, 2026 | Phoenix, AZ, USA | AI / Big Data | https://bigdataieee.org/ |
 | ICAIRML 2026 (2nd Intl Conf on AI, Robotics & ML) | Nov 9â11, 2026 | Rome, Italy | Robotics / AI / ML | https://www.mindspaceconferences.com/ |
+| WACV 2026 | Mar 6-10, 2026 | Tucson, AZ, USA | Computer Vision | https://wacv.thecvf.com/Conferences/2026 |
+| ICASSP 2026 | May 4-8, 2026 | Barcelona, Spain | Signal Processing / AI | https://2026.ieeeicassp.org/ |
+| MLSys 2026 | May 17-22, 2026 | Bellevue, WA, USA | ML Systems / AI Infrastructure | https://mlsys.org/Conferences/2026 |
+| ICSE 2026 | Apr 12-18, 2026 | Rio de Janeiro, Brazil | Software Engineering / AI | https://conf.researchr.org/home/icse-2026 |
+| PAKDD 2026 | Jun 9-12, 2026 | Hong Kong | Data Mining / ML | https://pakdd2026.org/ |
+| KDD 2026 | Aug 9-13, 2026 | Jeju, South Korea | Data Mining / ML / AI | https://kdd2026.kdd.org/ |
+| SIGGRAPH 2026 | Aug 2026 | Los Angeles, CA, USA | Computer Graphics / AI | https://s2026.siggraph.org/ |
+| MICCAI 2026 | Oct 4-8, 2026 | Abu Dhabi, UAE | Medical AI / Computer Vision | https://conferences.miccai.org/2026/ |
+| CIKM 2026 | Nov 7-11, 2026 | Rome, Italy | Data / Knowledge / ML | https://cikm2026.diag.uniroma1.it/ |
 
 ---
 
@@ -85,10 +94,8 @@
 | MLcon Berlin 2026 | Nov 23â27, 2026 | Berlin, Germany | ML / AI | https://mlconference.ai/berlin/ |
 | Generative AI Summit London 2026 | Dec 1, 2026 | London, UK | Generative AI / LLM | https://world.aiacceleratorinstitute.com/location/london |
 | BIG.AI@MIT 2026 | 2026 (TBD) | MIT, Cambridge, MA, USA | Generative AI / LLM | https://ide.mit.edu/events/2026-the-business-implications-of-generative-ai-mit-big-aimit/ |
-| MLSys 2026 | 2026 (TBD) | TBD | ML Systems | https://mlsys.org/ |
 | Global AI Show Riyadh 2026 | Jun 29-30, 2026 | Riyadh, Saudi Arabia | AI / LLM / Generative AI | https://www.globalaishow.com/riyadh/ |
 | GITEX AI Europe 2026 | Jun 30-Jul 1, 2026 | Messe Berlin, Berlin, Germany | AI / Tech / Enterprise AI | https://www.gitexeurope.com/ |
-| AI World Congress 2026 | Jun 23-24, 2026 | Kensington Conference Centre, London, UK | AI / ML / Robotics | https://aiconference.london/ |
 | â­ NEW Agentic AI Summit New York 2026 | Jun 4, 2026 | New York, NY, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticainewyork |
 | â­ NEW Agentic AI Summit Los Angeles 2026 | Aug 26, 2026 | Los Angeles, CA, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticailosangeles |
 | â­ NEW Chief AI Officer Summit Berlin 2026 | Sep 15, 2026 | Berlin, Germany | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caioberlin |
@@ -100,6 +107,11 @@
 | â­ NEW Agentic AI Summit Boston 2026 | Oct 29, 2026 | Boston, MA, USA | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaiboston |
 | â­ NEW Agentic AI Summit Toronto 2026 | Nov 12, 2026 | Toronto, ON, Canada | Agentic AI / LLM | https://world.aiacceleratorinstitute.com/location/agenticaitoronto |
 | â­ NEW Chief AI Officer Summit London 2026 | Dec 1, 2026 | London, UK | Enterprise AI / Leadership | https://world.aiacceleratorinstitute.com/location/caiolondon |
+| AMLD 2026 (Applied ML Days) | Feb 10-12, 2026 | Lausanne, Switzerland | ML / AI / Deep Learning | https://www.appliedmldays.org/ |
+| AI World Congress 2026 | Jun 23-24, 2026 | London, UK | Enterprise AI / General | https://worldaicouncil.com/ |
+| Raise Summit 2026 | Jul 8-9, 2026 | Paris, France | AI / General | https://www.raisesummit.com/ |
+| HumanX Europe 2026 | Sep 22-24, 2026 | Amsterdam, Netherlands | AI / Enterprise AI | https://humanx.co/europe |
+| Swiss AI Summit 2026 | Nov 17, 2026 | Zurich, Switzerland | AI / General | https://www.swiss-ai-summit.ch/ |
 
 ---
 

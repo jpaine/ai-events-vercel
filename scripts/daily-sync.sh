@@ -1,23 +1,19 @@
 #!/bin/bash
 
+# Daily sync: deploy any local changes, notify subscribers of new events.
+# Does NOT fetch from upstream — we maintain our own curated copy.
+
 set -euo pipefail
 
 PROJECT_DIR="/Users/jeffreypaine/ALL PROJECTS/AI Events"
 LOG_FILE="$PROJECT_DIR/.sync-log.txt"
-REPO_URL="https://raw.githubusercontent.com/jpaine/ai-events/main/ai-events-2026.md"
 MARKDOWN_FILE="$PROJECT_DIR/public/ai-events-2026.md"
-CURL_TIMEOUT=30
 SITE_URL="https://ai-events-vercel.vercel.app"
 
-# Load secrets (NOTIFY_SECRET, RESEND_API_KEY)
+# Load secrets (NOTIFY_SECRET)
 if [ -f "$PROJECT_DIR/.sync-env" ]; then
     set -a; source "$PROJECT_DIR/.sync-env"; set +a
 fi
-
-cleanup() {
-    rm -f "$MARKDOWN_FILE.tmp" "$MARKDOWN_FILE.verify"
-}
-trap cleanup EXIT
 
 log() {
     echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
@@ -32,12 +28,10 @@ error_exit() {
 notify_subscribers() {
     local new_events_json="$1"
     local total="$2"
-
     if [ -z "${NOTIFY_SECRET:-}" ]; then
-        log "⚠ NOTIFY_SECRET not set — skipping email notification"
+        log "NOTIFY_SECRET not set — skipping email notification"
         return
     fi
-
     log "Notifying email subscribers..."
     local payload="{\"secret\":\"$NOTIFY_SECRET\",\"newEvents\":$new_events_json,\"totalEvents\":$total}"
     local result
@@ -51,48 +45,29 @@ log "=== Starting Daily Sync ==="
 
 cd "$PROJECT_DIR" || error_exit "Cannot navigate to project directory"
 
-# Configure git
 [ -z "$(git config user.name)" ]  && git config user.name "AI Events Sync Bot"
 [ -z "$(git config user.email)" ] && git config user.email "sync@ai-events.local"
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 [ "$CURRENT_BRANCH" != "main" ] && git checkout main
 
-log "Fetching latest markdown..."
-if ! curl -m $CURL_TIMEOUT -s --compressed "$REPO_URL" --output "$MARKDOWN_FILE.tmp" 2>/dev/null; then
-    error_exit "Failed to fetch markdown"
-fi
-[ ! -s "$MARKDOWN_FILE.tmp" ] && error_exit "Downloaded file is empty"
-
-# Normalize encoding
-cat "$MARKDOWN_FILE.tmp" | \
-  sed 's/â€"/-/g' | \
-  sed 's/–/-/g' | \
-  sed 's/Â//g' > "$MARKDOWN_FILE.verify"
-
-if [ -f "$MARKDOWN_FILE.verify" ] && grep -q "2026" "$MARKDOWN_FILE.verify"; then
-    mv "$MARKDOWN_FILE.verify" "$MARKDOWN_FILE"
-else
-    error_exit "Encoding normalization produced invalid file"
-fi
-
-# Check for changes
-if git diff --quiet "$MARKDOWN_FILE" HEAD -- "$MARKDOWN_FILE" 2>/dev/null; then
-    log "No changes detected — skipping deploy"
+# Check for any uncommitted local changes (manual edits, curation, etc.)
+if git diff --quiet HEAD 2>/dev/null && git diff --cached --quiet HEAD 2>/dev/null; then
+    log "No local changes — nothing to deploy"
     log "=== Sync Complete (No changes) ==="
     exit 0
 fi
 
-log "Changes detected"
+log "Local changes detected — preparing deploy"
 
-# Snapshot new event rows from diff before committing
+# Snapshot new event rows from diff
 NEW_EVENTS_RAW=$(git diff "$MARKDOWN_FILE" | grep "^+|" | grep -v "^+|[-|]" | grep -v "^+| Event |" || true)
 
-# Build JSON array of new events
 NEW_EVENTS_JSON="["
 FIRST=true
 NEW_COUNT=0
 while IFS= read -r line; do
+    [ -z "$line" ] && continue
     NAME=$(echo "$line"  | cut -d'|' -f2 | sed 's/^ *//;s/ *$//')
     DATES=$(echo "$line" | cut -d'|' -f3 | sed 's/^ *//;s/ *$//')
     LOC=$(echo "$line"   | cut -d'|' -f4 | sed 's/^ *//;s/ *$//')
@@ -107,20 +82,20 @@ while IFS= read -r line; do
 done <<< "$NEW_EVENTS_RAW"
 NEW_EVENTS_JSON="$NEW_EVENTS_JSON]"
 
-# Commit and push
-git add "$MARKDOWN_FILE"
-git commit -m "Daily sync: Update AI Events content - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-log "Committed changes"
+# Commit all staged/unstaged changes
+git add -A
+git commit -m "Daily sync: curated update - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+log "Committed"
 
 if ! git push origin main 2>&1 | grep -v "^hint:" | tee -a "$LOG_FILE"; then
     git pull --rebase origin main || error_exit "Failed to pull/rebase"
     git push origin main || error_exit "Failed to push after rebase"
 fi
-log "Pushed to GitHub"
+log "Pushed"
 
 # Regenerate ICS
 if node scripts/generate-ics.js 2>&1 | tee -a "$LOG_FILE"; then
-    git add public/ai-events-2026.ics 2>/dev/null || true
+    git add public/ai-events-2026.ics
     git commit -m "Regenerate ICS calendar" 2>/dev/null || true
     git push origin main 2>/dev/null || true
 fi
@@ -132,7 +107,7 @@ if ! vercel deploy --prod --yes 2>&1 | tail -5 | tee -a "$LOG_FILE"; then
 fi
 log "Deployed"
 
-# Notify subscribers if new events were added
+# Notify subscribers if new events were found
 TOTAL_EVENTS=$(grep -c "^|" "$MARKDOWN_FILE" 2>/dev/null || echo "0")
 if [ "$NEW_COUNT" -gt 0 ]; then
     notify_subscribers "$NEW_EVENTS_JSON" "$TOTAL_EVENTS"
