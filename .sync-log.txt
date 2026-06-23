@@ -309,3 +309,125 @@ To https://github.com/jpaine/ai-events-vercel.git
 [2026-06-18 02:02:04] ❌ ERROR: Vercel deployment failed
 [2026-06-18 02:02:04] === Sync Failed ===
 [2026-06-18 02:02:04] === Sync Failed ===
+[2026-06-19 02:02:00] === Starting Daily Sync ===
+[2026-06-19 02:02:00] === Starting Daily Sync ===
+[2026-06-19 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-19 02:02:00] ✓ In project directory: /Users/jeffreypaine/ALL PROJECTS/AI Events
+[2026-06-19 02:02:00] ✓ On main branch
+[2026-06-19 02:02:00] ✓ On main branch
+[2026-06-19 02:02:00] Fetching latest markdown from GitHub...
+[2026-06-19 02:02:00] Fetching latest markdown from GitHub...
+[2026-06-19 02:02:02] ✓ Downloaded markdown file
+[2026-06-19 02:02:02] ✓ Downloaded markdown file
+[2026-06-19 02:02:02] Normalizing character encoding...
+[2026-06-19 02:02:02] Normalizing character encoding...
+[2026-06-19 02:02:02] ✓ File encoding normalized
+[2026-06-19 02:02:02] ✓ File encoding normalized
+[2026-06-19 02:02:02] ✓ Changes detected
+[2026-06-19 02:02:02] ✓ Changes detected
+[2026-06-19 02:02:02] ✓ Changes staged
+[2026-06-19 02:02:02] ✓ Changes staged
+[main 1d5565a] Daily sync: Update AI Events content - 2026-06-19 02:02:02 UTC
+ 1 file changed, 19 insertions(+), 16 deletions(-)
+[2026-06-19 02:02:02] ✓ Commit created
+[2026-06-19 02:02:02] ✓ Commit created
+[2026-06-19 02:02:02] Pushing to GitHub...
+[2026-06-19 02:02:02] Pushing to GitHub...
+To https://github.com/jpaine/ai-events-vercel.git
+   836620c..1d5565a  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   836620c..1d5565a  main -> main
+[2026-06-19 02:02:04] ✓ Pushed to GitHub
+[2026-06-19 02:02:04] ✓ Pushed to GitHub
+[2026-06-19 02:02:04] Generating ICS calendar file...
+[2026-06-19 02:02:04] Generating ICS calendar file...
+Generated ICS file with 96 events
+Generated ICS file with 96 events
+[2026-06-19 02:02:05] Deploying to Vercel...
+[2026-06-19 02:02:05] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 173: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 173: vercel: command not found
+[2026-06-19 02:02:05] ❌ ERROR: Vercel deployment failed
+[2026-06-19 02:02:05] ❌ ERROR: Vercel deployment failed
+[2026-06-19 02:02:05] === Sync Failed ===
+[2026-06-19 02:02:05] === Sync Failed ===
+[2026-06-20 02:02:00] === Starting Daily Sync ===
+[2026-06-20 02:02:00] === Starting Daily Sync ===
+[2026-06-20 02:02:00] Fetching latest markdown...
+[2026-06-20 02:02:00] Fetching latest markdown...
+[2026-06-20 02:02:02] Changes detected
+[2026-06-20 02:02:02] Changes detected
+[main 9d7e364] Daily sync: Update AI Events content - 2026-06-20 02:02:08 UTC
+ 1 file changed, 104 insertions(+), 97 deletions(-)
+[2026-06-20 02:02:08] Committed changes
+[2026-06-20 02:02:08] Committed changes
+To https://github.com/jpaine/ai-events-vercel.git
+   cafbdf5..9d7e364  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   cafbdf5..9d7e364  main -> main
+[2026-06-20 02:02:11] Pushed to GitHub
+[2026-06-20 02:02:11] Pushed to GitHub
+Generated ICS file with 101 events
+Generated ICS file with 101 events
+[main 021fad1] Regenerate ICS calendar
+ 1 file changed, 195 insertions(+), 130 deletions(-)
+[2026-06-20 02:02:13] Deploying to Vercel...
+[2026-06-20 02:02:13] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 130: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 130: vercel: command not found
+[2026-06-20 02:02:13] ERROR: Vercel deployment failed
+[2026-06-20 02:02:13] ERROR: Vercel deployment failed
+[2026-06-20 02:02:13] === Sync Failed ===
+[2026-06-20 02:02:13] === Sync Failed ===
+[2026-06-21 02:02:00] === Starting Daily Sync ===
+[2026-06-21 02:02:00] === Starting Daily Sync ===
+[2026-06-21 02:02:00] Fetching latest markdown...
+[2026-06-21 02:02:00] Fetching latest markdown...
+[2026-06-21 02:02:01] Changes detected
+[2026-06-21 02:02:01] Changes detected
+[main afb5e13] Daily sync: Update AI Events content - 2026-06-21 02:02:02 UTC
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+[2026-06-21 02:02:02] Committed changes
+[2026-06-21 02:02:02] Committed changes
+To https://github.com/jpaine/ai-events-vercel.git
+   021fad1..afb5e13  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   021fad1..afb5e13  main -> main
+[2026-06-21 02:02:04] Pushed to GitHub
+[2026-06-21 02:02:04] Pushed to GitHub
+Generated ICS file with 103 events
+Generated ICS file with 103 events
+[main 599bb44] Regenerate ICS calendar
+ 1 file changed, 137 insertions(+), 111 deletions(-)
+[2026-06-21 02:02:07] Deploying to Vercel...
+[2026-06-21 02:02:07] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 130: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 130: vercel: command not found
+[2026-06-21 02:02:07] ERROR: Vercel deployment failed
+[2026-06-21 02:02:07] ERROR: Vercel deployment failed
+[2026-06-21 02:02:07] === Sync Failed ===
+[2026-06-21 02:02:07] === Sync Failed ===
+[2026-06-22 02:02:00] === Starting Daily Sync ===
+[2026-06-22 02:02:00] === Starting Daily Sync ===
+[2026-06-22 02:02:00] Fetching latest markdown...
+[2026-06-22 02:02:00] Fetching latest markdown...
+[2026-06-22 02:02:02] Changes detected
+[2026-06-22 02:02:02] Changes detected
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+	modified:   .sync-log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	public/ai-events-2026.md.tmp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[2026-06-24 02:02:00] === Starting Daily Sync ===
+[2026-06-24 02:02:00] === Starting Daily Sync ===
+[2026-06-24 02:02:00] Local changes detected — preparing deploy
+[2026-06-24 02:02:00] Local changes detected — preparing deploy

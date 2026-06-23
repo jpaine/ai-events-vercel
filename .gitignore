@@ -38,3 +38,4 @@ yarn-error.log*
 .vercel
 .env*.local
 .sync-env
+.gstack/
