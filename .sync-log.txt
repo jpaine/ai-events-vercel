@@ -535,3 +535,29 @@ Generated ICS file with 116 events
 [2026-06-30 02:02:00] === Starting Daily Sync ===
 [2026-06-30 02:02:00] Local changes detected — preparing deploy
 [2026-06-30 02:02:00] Local changes detected — preparing deploy
+[main d2fa851] Daily sync: curated update - 2026-06-30 02:02:00 UTC
+ 1 file changed, 26 insertions(+)
+[2026-06-30 02:02:00] Committed
+[2026-06-30 02:02:00] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   ada8251..d2fa851  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   ada8251..d2fa851  main -> main
+[2026-06-30 02:02:02] Pushed
+[2026-06-30 02:02:02] Pushed
+Generated ICS file with 116 events
+Generated ICS file with 116 events
+[main 62d12e5] Regenerate ICS calendar
+ 1 file changed, 116 insertions(+), 116 deletions(-)
+[2026-06-30 02:02:04] Deploying to Vercel...
+[2026-06-30 02:02:04] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 105: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 105: vercel: command not found
+[2026-06-30 02:02:04] ERROR: Vercel deployment failed
+[2026-06-30 02:02:04] ERROR: Vercel deployment failed
+[2026-06-30 02:02:04] === Sync Failed ===
+[2026-06-30 02:02:04] === Sync Failed ===
+[2026-07-01 02:08:34] === Starting Daily Sync ===
+[2026-07-01 02:08:34] === Starting Daily Sync ===
+[2026-07-01 02:08:34] Local changes detected — preparing deploy
+[2026-07-01 02:08:34] Local changes detected — preparing deploy
