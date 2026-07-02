@@ -561,3 +561,19 @@ Generated ICS file with 116 events
 [2026-07-01 02:08:34] === Starting Daily Sync ===
 [2026-07-01 02:08:34] Local changes detected — preparing deploy
 [2026-07-01 02:08:34] Local changes detected — preparing deploy
+[main 59d55b9] Daily sync: curated update - 2026-07-01 02:08:34 UTC
+ 1 file changed, 26 insertions(+)
+[2026-07-01 02:08:34] Committed
+[2026-07-01 02:08:34] Committed
+fatal: unable to access 'https://github.com/jpaine/ai-events-vercel.git/': Could not resolve host: github.com
+fatal: unable to access 'https://github.com/jpaine/ai-events-vercel.git/': Could not resolve host: github.com
+error: cannot pull with rebase: You have unstaged changes.
+error: please commit or stash them.
+[2026-07-01 02:08:34] ERROR: Failed to pull/rebase
+[2026-07-01 02:08:34] ERROR: Failed to pull/rebase
+[2026-07-01 02:08:34] === Sync Failed ===
+[2026-07-01 02:08:34] === Sync Failed ===
+[2026-07-02 02:02:01] === Starting Daily Sync ===
+[2026-07-02 02:02:01] === Starting Daily Sync ===
+[2026-07-02 02:02:01] Local changes detected — preparing deploy
+[2026-07-02 02:02:01] Local changes detected — preparing deploy
