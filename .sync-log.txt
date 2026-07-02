@@ -577,3 +577,25 @@ error: please commit or stash them.
 [2026-07-02 02:02:01] === Starting Daily Sync ===
 [2026-07-02 02:02:01] Local changes detected — preparing deploy
 [2026-07-02 02:02:01] Local changes detected — preparing deploy
+[main e8a38a8] Daily sync: curated update - 2026-07-02 02:02:01 UTC
+ 1 file changed, 16 insertions(+)
+[2026-07-02 02:02:01] Committed
+[2026-07-02 02:02:01] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   62d12e5..e8a38a8  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   62d12e5..e8a38a8  main -> main
+[2026-07-02 02:02:37] Pushed
+[2026-07-02 02:02:37] Pushed
+Generated ICS file with 116 events
+Generated ICS file with 116 events
+[main 9dedf85] Regenerate ICS calendar
+ 1 file changed, 116 insertions(+), 116 deletions(-)
+[2026-07-02 02:02:39] Deploying to Vercel...
+[2026-07-02 02:02:39] Deploying to Vercel...
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 105: vercel: command not found
+/Users/jeffreypaine/ALL PROJECTS/AI Events/scripts/daily-sync.sh: line 105: vercel: command not found
+[2026-07-02 02:02:39] ERROR: Vercel deployment failed
+[2026-07-02 02:02:39] ERROR: Vercel deployment failed
+[2026-07-02 02:02:39] === Sync Failed ===
+[2026-07-02 02:02:39] === Sync Failed ===

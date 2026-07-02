@@ -10,6 +10,16 @@ LOG_FILE="$PROJECT_DIR/.sync-log.txt"
 MARKDOWN_FILE="$PROJECT_DIR/public/ai-events-2026.md"
 SITE_URL="https://ai-events-vercel.vercel.app"
 
+# Load nvm so vercel CLI is on PATH
+export NVM_DIR="$HOME/.nvm"
+# shellcheck disable=SC1091
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
+# Use the default nvm node version's bin dir
+NVM_DEFAULT_NODE=$( (nvm which default 2>/dev/null || echo '') )
+if [ -n "$NVM_DEFAULT_NODE" ]; then
+    export PATH="$(dirname "$NVM_DEFAULT_NODE"):$PATH"
+fi
+
 # Load secrets (NOTIFY_SECRET)
 if [ -f "$PROJECT_DIR/.sync-env" ]; then
     set -a; source "$PROJECT_DIR/.sync-env"; set +a
