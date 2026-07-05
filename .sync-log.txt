@@ -599,3 +599,5 @@ Generated ICS file with 116 events
 [2026-07-02 02:02:39] ERROR: Vercel deployment failed
 [2026-07-02 02:02:39] === Sync Failed ===
 [2026-07-02 02:02:39] === Sync Failed ===
+[2026-07-05 23:18:12] === Starting Daily Sync ===
+[2026-07-05 23:18:12] Local changes detected — preparing deploy
