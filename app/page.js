@@ -72,7 +72,7 @@ export default function Home() {
   )
 
   const icsUrl = 'https://ai-events-vercel.vercel.app/ai-events-2026.ics'
-  const googleCalendarUrl = `https://calendar.google.com/calendar/u/0/r/settings/addbyurl?url=${encodeURIComponent(icsUrl)}`
+  const googleCalendarUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(icsUrl.replace(/^https/, 'webcal'))}`
 
   return (
     <>
