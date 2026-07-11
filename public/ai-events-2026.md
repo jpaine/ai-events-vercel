@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-06-20
+> **Last updated:** 2026-07-11
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 ---
@@ -112,6 +112,18 @@
 | Raise Summit 2026 | Jul 8-9, 2026 | Paris, France | AI / General | https://www.raisesummit.com/ |
 | HumanX Europe 2026 | Sep 22-24, 2026 | Amsterdam, Netherlands | AI / Enterprise AI | https://humanx.co/europe |
 | Swiss AI Summit 2026 | Nov 17, 2026 | Zurich, Switzerland | AI / General | https://www.swiss-ai-summit.ch/ |
+| IBM Think 2026 | May 4-7, 2026 | Boston Convention & Expo Center, Boston, MA, USA | Enterprise AI / AI / Cloud | https://www.ibm.com/events/think/ |
+| Google I/O 2026 | May 20-21, 2026 | Shoreline Amphitheatre, Mountain View, CA, USA | AI / Developer / LLM | https://io.google/2026/ |
+| Microsoft Build 2026 | Jun 2-3, 2026 | San Francisco, CA, USA | AI / Developer / LLM | https://build.microsoft.com |
+| Collision 2026 | Jun 22-25, 2026 | Enercare Centre, Toronto, ON, Canada | Tech / Startup / AI | https://collisionconf.com/ |
+| VentureBeat Transform 2026 | Jul 14-15, 2026 | Menlo Park, CA, USA | AI / Enterprise AI / LLM | https://venturebeat.com/events/transform/ |
+| TechCrunch Disrupt 2026 | Oct 13-15, 2026 | Moscone West, San Francisco, CA, USA | AI / Startup / Tech | https://techcrunch.com/events/techcrunch-disrupt/ |
+| Salesforce Dreamforce 2026 | Sep 15-17, 2026 | Moscone Center, San Francisco, CA, USA | Enterprise AI / Agentic AI | https://www.salesforce.com/dreamforce/ |
+| OpenAI DevDay 2026 | Sep 29, 2026 | San Francisco, CA, USA | AI / Developer / LLM | https://openai.com/devday |
+| EmTech MIT 2026 | Sep 29-Oct 1, 2026 | MIT Campus, Cambridge, MA, USA | AI / Technology | https://events.technologyreview.com/ |
+| Web Summit 2026 | Nov 9-12, 2026 | Altice Arena, Lisbon, Portugal | Tech / AI / Startup | https://websummit.com/ |
+| Slush 2026 | Nov 18-19, 2026 | Helsinki Expo & Convention Centre, Helsinki, Finland | Tech / AI / Startup | https://slush.org/ |
+| AWS re:Invent 2026 | Nov 30-Dec 4, 2026 | Las Vegas, NV, USA | Cloud / AI / ML | https://aws.amazon.com/events/reinvent/ |
 
 ---
 
