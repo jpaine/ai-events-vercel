@@ -8,8 +8,13 @@ const MONTHS = { jan:1, feb:2, mar:3, apr:4, may:5, jun:6, jul:7, aug:8, sep:9, 
 function parseSortKey(dates) {
   const s = dates.toLowerCase().replace(/[–—]/g, '-')
   if (/tbd|tba/.test(s)) return { sortMonth: 99, sortDay: 1 }
-  const m = s.match(/([a-z]{3})\s+(\d+)/)
+  // Cross-month range like "nov-dec 2026" — use the first month
+  const cross = s.match(/([a-z]{3})-[a-z]{3}/)
+  if (cross) return { sortMonth: MONTHS[cross[1]] || 99, sortDay: 1 }
+  // Specific day: "jan 20" — must be 1-2 digits, not a year
+  const m = s.match(/([a-z]{3})\s+(\d{1,2})(?!\d)/)
   if (m) return { sortMonth: MONTHS[m[1]] || 99, sortDay: parseInt(m[2]) || 1 }
+  // Month + year only: "jul 2026"
   const mo = s.match(/([a-z]{3})\s+\d{4}/)
   if (mo) return { sortMonth: MONTHS[mo[1]] || 99, sortDay: 1 }
   return { sortMonth: 99, sortDay: 1 }
@@ -36,8 +41,9 @@ function parseMarkdown(markdown) {
 
     const cells = line.split('|').slice(1, -1).map(c => c.trim())
     if (cells.length < 5) continue
-    const [name, dates, location, category, url] = cells
-    if (!name || name === 'Event') continue
+    const [rawName, dates, location, category, url] = cells
+    if (!rawName || rawName === 'Event') continue
+    const name = rawName.replace(/^[⭐*]+\s*NEW\s*/i, '').trim()
 
     events.push({ name, dates, location, category, url, section, ...parseSortKey(dates) })
   }

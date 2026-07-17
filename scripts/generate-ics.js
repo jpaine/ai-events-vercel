@@ -38,7 +38,7 @@ function parseMarkdown(content) {
       // Format: Event | Dates | Location | Category | URL
       if (parts.length >= 5) {
         const event = {
-          title: parts[0],
+          title: parts[0].replace(/^[⭐*]+\s*NEW\s*/i, '').trim(),
           dates: parts[1],
           location: parts[2],
           category: parts[3],
@@ -59,59 +59,61 @@ function parseMarkdown(content) {
   return events
 }
 
-// Parse date strings like "Jan 20-27" or "Jun 1-5, 2026"
+// Parse date strings like "Jan 20-27", "Jun 1-5, 2026", "Jul 2026", "Nov-Dec 2026"
 function parseDateRange(dateStr) {
-  if (!dateStr || dateStr.includes('TBD') || dateStr.includes('(TBD)')) {
-    return null
-  }
+  if (!dateStr || /tbd|tba/i.test(dateStr)) return null
 
   const monthMap = {
     'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04',
     'May': '05', 'Jun': '06', 'Jul': '07', 'Aug': '08',
     'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
   }
+  const lastDay = { '01':31,'02':28,'03':31,'04':30,'05':31,'06':30,'07':31,'08':31,'09':30,'10':31,'11':30,'12':31 }
 
   let year = '2026'
   const yearMatch = dateStr.match(/(\d{4})/)
-  if (yearMatch) {
-    year = yearMatch[1]
+  if (yearMatch) year = yearMatch[1]
+
+  // Cross-month range with no days: "Nov-Dec 2026", "Sep-Oct 2026"
+  const monthRange = dateStr.match(/([A-Za-z]{3})-([A-Za-z]{3})/)
+  if (monthRange && monthMap[monthRange[1]] && monthMap[monthRange[2]]) {
+    const sm = monthMap[monthRange[1]]
+    const em = monthMap[monthRange[2]]
+    return { start: `${year}${sm}01`, end: `${year}${em}${lastDay[em]}` }
   }
 
-  // Match: "Jan 20-27" or "Sep 27-Oct 1"
-  const rangeMatch = dateStr.match(/(\w+)\s+(\d+)-(\d+)/) ||
-                     dateStr.match(/(\w+)\s+(\d+)-(\w+)\s+(\d+)/)
-
-  if (!rangeMatch) {
-    // Try single date: "Jun 4"
-    const singleMatch = dateStr.match(/(\w+)\s+(\d+)/)
-    if (singleMatch) {
-      const month = monthMap[singleMatch[1]]
-      const day = singleMatch[2].padStart(2, '0')
-      const dateStr_iso = `${year}${month}${day}`
-      return { start: dateStr_iso, end: dateStr_iso }
+  // Same-month day range: "Jan 20-27"
+  const sameDayRange = dateStr.match(/([A-Za-z]{3})\s+(\d{1,2})-(\d{1,2})/)
+  if (sameDayRange && monthMap[sameDayRange[1]]) {
+    const m = monthMap[sameDayRange[1]]
+    return {
+      start: `${year}${m}${sameDayRange[2].padStart(2, '0')}`,
+      end: `${year}${m}${sameDayRange[3].padStart(2, '0')}`
     }
-    return null
   }
 
-  if (rangeMatch.length === 4) {
-    // Same month: "Jan 20-27"
-    const month = monthMap[rangeMatch[1]]
-    const startDay = rangeMatch[2].padStart(2, '0')
-    const endDay = rangeMatch[3].padStart(2, '0')
+  // Cross-month day range: "Sep 27-Oct 1"
+  const crossDayRange = dateStr.match(/([A-Za-z]{3})\s+(\d{1,2})-([A-Za-z]{3})\s+(\d{1,2})/)
+  if (crossDayRange && monthMap[crossDayRange[1]] && monthMap[crossDayRange[3]]) {
     return {
-      start: `${year}${month}${startDay}`,
-      end: `${year}${month}${endDay}`
+      start: `${year}${monthMap[crossDayRange[1]]}${crossDayRange[2].padStart(2, '0')}`,
+      end: `${year}${monthMap[crossDayRange[3]]}${crossDayRange[4].padStart(2, '0')}`
     }
-  } else if (rangeMatch.length === 5) {
-    // Different months: "Sep 27-Oct 1"
-    const startMonth = monthMap[rangeMatch[1]]
-    const startDay = rangeMatch[2].padStart(2, '0')
-    const endMonth = monthMap[rangeMatch[3]]
-    const endDay = rangeMatch[4].padStart(2, '0')
-    return {
-      start: `${year}${startMonth}${startDay}`,
-      end: `${year}${endMonth}${endDay}`
-    }
+  }
+
+  // Single day: "Jun 4"
+  const singleDay = dateStr.match(/([A-Za-z]{3})\s+(\d{1,2})(?!\d)/)
+  if (singleDay && monthMap[singleDay[1]]) {
+    const m = monthMap[singleDay[1]]
+    const d = singleDay[2].padStart(2, '0')
+    return { start: `${year}${m}${d}`, end: `${year}${m}${d}` }
+  }
+
+  // Month only: "Jul 2026", "Mar 2026"
+  const monthOnly = dateStr.match(/([A-Za-z]{3})\s+\d{4}/)
+  if (monthOnly && monthMap[monthOnly[1]]) {
+    const m = monthMap[monthOnly[1]]
+    return { start: `${year}${m}01`, end: `${year}${m}${lastDay[m]}` }
   }
 
   return null
