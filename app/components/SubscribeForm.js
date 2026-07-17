@@ -105,6 +105,23 @@ export default function SubscribeForm() {
         .subscribe-check {
           font-size: 15px;
         }
+        :global([data-theme="light"]) .subscribe-input {
+          background: #ffffff;
+          border-color: #d0d7de;
+          color: #24292f;
+        }
+        :global([data-theme="light"]) .subscribe-input::placeholder { color: #8c959f; }
+        :global([data-theme="light"]) .subscribe-input:focus { border-color: #0969da; }
+        :global([data-theme="light"]) .subscribe-btn {
+          background: #f6f8fa;
+          color: #24292f;
+          border-color: #d0d7de;
+        }
+        :global([data-theme="light"]) .subscribe-btn:hover:not(:disabled) {
+          border-color: #0969da;
+          color: #0969da;
+        }
+        :global([data-theme="light"]) .subscribe-success { color: #2da44e; }
       `}</style>
     </form>
   )

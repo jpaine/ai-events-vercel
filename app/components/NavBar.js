@@ -1,3 +1,5 @@
+import ThemeToggle from './ThemeToggle'
+
 export default function NavBar({ lastUpdated, googleCalendarUrl, icsUrl }) {
   return (
     <nav className="navbar">
@@ -10,6 +12,7 @@ export default function NavBar({ lastUpdated, googleCalendarUrl, icsUrl }) {
           )}
         </div>
         <div className="navbar-actions">
+          <ThemeToggle />
           <a
             href={googleCalendarUrl}
             target="_blank"

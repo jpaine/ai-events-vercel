@@ -550,6 +550,136 @@ export default function EventsTable({ events }) {
           font-size: 14px;
         }
 
+        /* Light mode overrides */
+        :global([data-theme="light"]) .et-filterbar {
+          background: #ffffff;
+          border-color: #d0d7de;
+        }
+
+        :global([data-theme="light"]) .et-chip {
+          border-color: #d0d7de;
+          color: #57606a;
+        }
+
+        :global([data-theme="light"]) .et-chip:hover {
+          border-color: #0969da;
+          color: #24292f;
+        }
+
+        :global([data-theme="light"]) .et-chip.active {
+          background: rgba(9, 105, 218, 0.1);
+          border-color: #0969da;
+          color: #0969da;
+        }
+
+        :global([data-theme="light"]) .et-search-icon { color: #8c959f; }
+
+        :global([data-theme="light"]) .et-search {
+          background: #ffffff;
+          border-color: #d0d7de;
+          color: #24292f;
+        }
+
+        :global([data-theme="light"]) .et-search::placeholder { color: #8c959f; }
+        :global([data-theme="light"]) .et-search:focus { border-color: #0969da; }
+
+        :global([data-theme="light"]) .et-search-clear { color: #8c959f; }
+        :global([data-theme="light"]) .et-search-clear:hover { color: #57606a; }
+
+        :global([data-theme="light"]) .et-results-meta { color: #6e7781; }
+
+        :global([data-theme="light"]) .et-reset { color: #0969da; }
+        :global([data-theme="light"]) .et-reset:hover { color: #0550ae; }
+
+        :global([data-theme="light"]) .et-section-title { color: #1f2328; }
+
+        :global([data-theme="light"]) .et-section-count {
+          background: #eaeef2;
+          color: #57606a;
+        }
+
+        :global([data-theme="light"]) .et-table { border-color: #d0d7de; }
+
+        :global([data-theme="light"]) .et-table th {
+          background: #f6f8fa;
+          color: #6e7781;
+          border-color: #d0d7de;
+        }
+
+        :global([data-theme="light"]) .et-table td { border-color: #eaeef2; }
+
+        :global([data-theme="light"]) .et-table tbody tr:hover td {
+          background: rgba(9, 105, 218, 0.03);
+        }
+
+        :global([data-theme="light"]) .et-month-row td {
+          background: #eaeef2;
+          border-color: #d0d7de;
+        }
+
+        :global([data-theme="light"]) .et-month-label { color: #6e7781; }
+        :global([data-theme="light"]) .et-month-label.current { color: #2da44e; }
+        :global([data-theme="light"]) .et-month-label.past { color: #b1bac4; }
+
+        :global([data-theme="light"]) .et-pulse { background: #2da44e; }
+
+        :global([data-theme="light"]) .et-name { color: #1f2328; }
+
+        :global([data-theme="light"]) .et-domain { color: #8c959f; }
+        :global([data-theme="light"]) .et-domain:hover { color: #0969da; }
+
+        :global([data-theme="light"]) .et-date-badge {
+          background: #f6f8fa;
+          border-color: #d0d7de;
+          color: #57606a;
+        }
+
+        :global([data-theme="light"]) .et-loc { color: #57606a; }
+
+        :global([data-theme="light"]) .et-cat-general {
+          background: rgba(9, 105, 218, 0.08);
+          border-color: rgba(9, 105, 218, 0.25);
+          color: #0550ae;
+        }
+
+        :global([data-theme="light"]) .et-cat-ml {
+          background: rgba(26, 127, 55, 0.08);
+          border-color: rgba(26, 127, 55, 0.25);
+          color: #1a7f37;
+        }
+
+        :global([data-theme="light"]) .et-cat-robotics {
+          background: rgba(154, 87, 0, 0.08);
+          border-color: rgba(154, 87, 0, 0.25);
+          color: #7d4e17;
+        }
+
+        :global([data-theme="light"]) .et-cat-nlp {
+          background: rgba(130, 80, 215, 0.08);
+          border-color: rgba(130, 80, 215, 0.25);
+          color: #6639ba;
+        }
+
+        :global([data-theme="light"]) .et-cat-vision {
+          background: rgba(9, 105, 218, 0.06);
+          border-color: rgba(9, 105, 218, 0.2);
+          color: #0550ae;
+        }
+
+        :global([data-theme="light"]) .et-cat-llm {
+          background: rgba(186, 95, 0, 0.08);
+          border-color: rgba(186, 95, 0, 0.25);
+          color: #953800;
+        }
+
+        :global([data-theme="light"]) .et-cat-eng {
+          background: rgba(14, 116, 144, 0.08);
+          border-color: rgba(14, 116, 144, 0.25);
+          color: #0e7490;
+        }
+
+        :global([data-theme="light"]) .et-empty { color: #6e7781; }
+
         /* Responsive */
         @media (max-width: 768px) {
           .et-root {
