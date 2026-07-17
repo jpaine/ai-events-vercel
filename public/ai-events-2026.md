@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-07-11
+> **Last updated:** 2026-07-17
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 ---
@@ -36,6 +36,10 @@
 | SIGGRAPH 2026 | Jul 27-Aug 1, 2026 | Los Angeles, CA, USA | Computer Graphics / AI | https://s2026.siggraph.org/ |
 | MICCAI 2026 | Oct 4-8, 2026 | Abu Dhabi, UAE | Medical AI / Computer Vision | https://conferences.miccai.org/2026/ |
 | CIKM 2026 | Nov 7-11, 2026 | Rome, Italy | Data / Knowledge / ML | https://cikm2026.diag.uniroma1.it/ |
+| ⭐ NEW JSAI 2026 (40th Annual Conf of the Japanese Society for AI) | Jun 2026 | Japan (TBD) | AI / General | https://www.ai-gakkai.or.jp |
+| ⭐ NEW ACML 2026 (Asian Conf on Machine Learning) | Nov-Dec 2026 | Asia (TBD) | ML / Deep Learning | https://acml-conf.org |
+| ⭐ NEW ICONIP 2026 (Intl Conf on Neural Information Processing) | Nov-Dec 2026 | Asia (TBD) | ML / Deep Learning | https://apnns.org |
+| ⭐ NEW CVIP 2026 (Conf on Computer Vision & Image Processing) | Nov-Dec 2026 | India (TBD) | Computer Vision | https://cvip2026.com |
 
 ---
 
@@ -124,6 +128,16 @@
 | Web Summit 2026 | Nov 9-12, 2026 | Altice Arena, Lisbon, Portugal | Tech / AI / Startup | https://websummit.com/ |
 | Slush 2026 | Nov 18-19, 2026 | Helsinki Expo & Convention Centre, Helsinki, Finland | Tech / AI / Startup | https://slush.org/ |
 | AWS re:Invent 2026 | Nov 30-Dec 4, 2026 | Las Vegas, NV, USA | Cloud / AI / ML | https://aws.amazon.com/events/reinvent/ |
+| ⭐ NEW WAIC 2026 (World Artificial Intelligence Conference) | Jul 2026 | Shanghai World Expo Exhibition Centre, Shanghai, China | AI / General | https://www.worldai.com.cn |
+| ⭐ NEW Huawei Connect 2026 | Sep 2026 | Shanghai, China | AI / Cloud / Enterprise AI | https://www.huawei.com/en/events/huaweiconnect |
+| ⭐ NEW GITEX Global 2026 | Oct 2026 | Dubai World Trade Centre, Dubai, UAE | AI / General | https://www.gitex.com |
+| ⭐ NEW Nordic AI Summit 2026 | Oct-Nov 2026 | Oslo, Norway | AI / General | https://www.nordicaisummit.com |
+| ⭐ NEW AI Sweden Annual Summit 2026 | Oct 2026 | Stockholm, Sweden | AI / General | https://www.ai.se |
+| ⭐ NEW Copenhagen AI Summit 2026 | 2026 (TBD) | Copenhagen, Denmark | AI / General | https://www.copenhagenai.com |
+| ⭐ NEW AI Summit Asia 2026 | Sep 2026 | Suntec Singapore Convention Centre, Singapore | AI / Industry | https://theaisummit.com/singapore |
+| ⭐ NEW India AI Summit 2026 | 2026 (TBD) | New Delhi, India | AI / General | https://indiaai.gov.in |
+| ⭐ NEW AI & Big Data Expo Asia 2026 | 2026 (TBD) | Singapore | AI / Big Data / Industry | https://www.ai-expo.net/asia |
+| ⭐ NEW Japan IT Week (AI & Business Automation) 2026 | May 2026 | Tokyo Big Sight, Tokyo, Japan | AI / Enterprise AI | https://www.japan-it.jp/en |
 
 ---
 
