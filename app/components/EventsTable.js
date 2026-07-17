@@ -147,16 +147,14 @@ export default function EventsTable({ events }) {
         </div>
       </div>
 
-      {(filter !== 'all' || search) && (
-        <div className="et-results-meta">
-          {filtered.length} of {events.length} events
-          {(filter !== 'all' || search) && (
-            <button className="et-reset" onClick={() => { setFilter('all'); setSearch('') }}>
-              Clear filters
-            </button>
-          )}
-        </div>
-      )}
+      <div className="et-results-meta">
+        {filtered.length} of {events.length} events
+        {(filter !== 'all' || search) && (
+          <button className="et-reset" onClick={() => { setFilter('all'); setSearch('') }}>
+            Clear filters
+          </button>
+        )}
+      </div>
 
       <div className="et-content">
         {sections.map(section => {
