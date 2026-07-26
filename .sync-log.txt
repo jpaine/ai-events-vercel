@@ -1702,3 +1702,21 @@ Aliased: https://ai-events-vercel.vercel.app [2m]
 [2026-07-26 02:04:15] === Sync Complete ===
 [2026-07-26 02:05:43] === Starting Daily Sync ===
 [2026-07-26 02:05:44] Local changes detected — preparing deploy
+[2026-07-26 02:05:44] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   1fcb8da..fd59c26  main -> main
+[2026-07-26 02:05:45] Pushed
+Generated ICS file with 138 events
+[2026-07-26 02:05:47] Deploying to Vercel...
+Aliased: https://ai-events-vercel.vercel.app [2m]
+
+Common next commands:
+- `vercel inspect ai-events-vercel-42f6r21v3-jeffs-projects-9be53fec.vercel.app --logs`
+- `vercel redeploy ai-events-vercel-42f6r21v3-jeffs-projects-9be53fec.vercel.app`
+[2026-07-26 02:07:43] Deployed
+[2026-07-26 02:07:43] No new events detected — skipping subscriber notification
+[2026-07-26 02:07:44] === Sync Complete ===
+[2026-07-27 02:02:01] === Starting Daily Sync ===
+[2026-07-27 02:02:01] === Starting Daily Sync ===
+[2026-07-27 02:02:01] Local changes detected — preparing deploy
+[2026-07-27 02:02:01] Local changes detected — preparing deploy
