@@ -2192,3 +2192,37 @@ Common next commands:
 [2026-08-06 02:02:01] === Starting Daily Sync ===
 [2026-08-06 02:02:01] Local changes detected — preparing deploy
 [2026-08-06 02:02:01] Local changes detected — preparing deploy
+[main 71bee46] Daily sync: curated update - 2026-08-06 02:02:01 UTC
+ 1 file changed, 19 insertions(+)
+[2026-08-06 02:02:02] Committed
+[2026-08-06 02:02:02] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   14ec0d6..71bee46  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   14ec0d6..71bee46  main -> main
+[2026-08-06 02:02:04] Pushed
+[2026-08-06 02:02:04] Pushed
+Generated ICS file with 138 events
+Generated ICS file with 138 events
+[main 4191447] Regenerate ICS calendar
+ 1 file changed, 138 insertions(+), 138 deletions(-)
+[2026-08-06 02:02:07] Deploying to Vercel...
+[2026-08-06 02:02:07] Deploying to Vercel...
+Building: Created build cache: 12s
+Building: Uploading build cache [154.02 MB]
+[2K[1A[2K[GProduction: https://ai-events-vercel-npafcodjq-jeffs-projects-9be53fec.vercel.app [2m]
+Completing...
+Aliased: https://ai-events-vercel.vercel.app [2m]
+Building: Created build cache: 12s
+Building: Uploading build cache [154.02 MB]
+[2K[1A[2K[GProduction: https://ai-events-vercel-npafcodjq-jeffs-projects-9be53fec.vercel.app [2m]
+Completing...
+Aliased: https://ai-events-vercel.vercel.app [2m]
+[2026-08-06 02:04:03] Deployed
+[2026-08-06 02:04:03] Deployed
+[2026-08-06 02:04:03] No new events detected — skipping subscriber notification
+[2026-08-06 02:04:03] No new events detected — skipping subscriber notification
+[2026-08-06 02:04:03] === Sync Complete ===
+[2026-08-06 02:04:03] === Sync Complete ===
+[2026-08-06 02:05:49] === Starting Daily Sync ===
+[2026-08-06 02:05:49] Local changes detected — preparing deploy
