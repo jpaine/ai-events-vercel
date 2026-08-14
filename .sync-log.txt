@@ -2483,3 +2483,20 @@ Common next commands:
 [status-check] Email sent: {"id":"9ab7c308-a66f-411a-a272-a88eee557e3b"}
 [2026-08-14 03:51:46] === Starting Daily Sync ===
 [2026-08-14 03:51:46] Local changes detected — preparing deploy
+[2026-08-14 03:51:46] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   d03d4a3..becca37  main -> main
+[2026-08-14 03:51:49] Pushed
+Generated ICS file with 138 events
+[2026-08-14 03:51:52] Deploying to Vercel...
+Uploading [====================] (177.2KB/177.2KB)
+Inspect: https://vercel.com/jeffs-projects-9be53fec/ai-events-vercel/12FBxGGqX8LdumvU5BBcANsMSrwD [3s]
+Production: https://ai-events-vercel-2sci0vdbv-jeffs-projects-9be53fec.vercel.app [3s]
+https://ai-events-vercel-2sci0vdbv-jeffs-projects-9be53fec.vercel.appBuilding...
+Error: request to https://api.vercel.com/v13/deployments/dpl_12FBxGGqX8LdumvU5BBcANsMSrwD?teamId=team_6j0LztfZyJXLLAKLMQE1Wux9 failed, reason: read ETIMEDOUT
+[2026-08-14 05:53:54] ERROR: Vercel deployment failed
+[2026-08-14 05:53:55] === Sync Failed ===
+[2026-08-15 02:02:01] === Starting Daily Sync ===
+[2026-08-15 02:02:01] === Starting Daily Sync ===
+[2026-08-15 02:02:01] Local changes detected — preparing deploy
+[2026-08-15 02:02:01] Local changes detected — preparing deploy
