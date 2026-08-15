@@ -2500,3 +2500,40 @@ Error: request to https://api.vercel.com/v13/deployments/dpl_12FBxGGqX8LdumvU5BB
 [2026-08-15 02:02:01] === Starting Daily Sync ===
 [2026-08-15 02:02:01] Local changes detected — preparing deploy
 [2026-08-15 02:02:01] Local changes detected — preparing deploy
+[main 1f4af44] Daily sync: curated update - 2026-08-15 02:02:01 UTC
+ 1 file changed, 17 insertions(+)
+[2026-08-15 02:02:01] Committed
+[2026-08-15 02:02:01] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   2dd52e4..1f4af44  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   2dd52e4..1f4af44  main -> main
+[2026-08-15 02:02:04] Pushed
+[2026-08-15 02:02:04] Pushed
+Generated ICS file with 138 events
+Generated ICS file with 138 events
+[main b6e2e24] Regenerate ICS calendar
+ 1 file changed, 138 insertions(+), 138 deletions(-)
+[2026-08-15 02:02:06] Deploying to Vercel...
+[2026-08-15 02:02:06] Deploying to Vercel...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://ai-events-vercel-flwifc9h9-jeffs-projects-9be53fec.vercel.app [2m]
+Completing...
+Aliased: https://ai-events-vercel.vercel.app [2m]
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://ai-events-vercel-flwifc9h9-jeffs-projects-9be53fec.vercel.app [2m]
+Completing...
+Aliased: https://ai-events-vercel.vercel.app [2m]
+[2026-08-15 02:04:02] Deployed
+[2026-08-15 02:04:02] Deployed
+[2026-08-15 02:04:02] No new events detected — skipping subscriber notification
+[2026-08-15 02:04:02] No new events detected — skipping subscriber notification
+[2026-08-15 02:04:02] === Sync Complete ===
+[2026-08-15 02:04:02] === Sync Complete ===
+[status-check] Email sent: {"id":"e6a966e2-f3a9-4be5-ada5-42538895f42c"}
+[2026-08-16 02:02:00] === Starting Daily Sync ===
+[2026-08-16 02:02:00] === Starting Daily Sync ===
+[2026-08-16 02:02:01] Local changes detected — preparing deploy
+[2026-08-16 02:02:01] Local changes detected — preparing deploy
