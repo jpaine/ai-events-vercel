@@ -3299,3 +3299,22 @@ Common next commands:
 [status-check] Email sent: {"id":"5d7987fe-e0dd-47dc-93d4-92647fcc8e17"}
 [2026-09-06 09:54:40] === Starting Daily Sync ===
 [2026-09-06 09:54:40] Local changes detected — preparing deploy
+[2026-09-06 09:54:40] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   e6d5080..4412ef5  main -> main
+[2026-09-06 09:54:43] Pushed
+Generated ICS file with 138 events
+[2026-09-06 09:54:45] Deploying to Vercel...
+│           Update available! v50.9.6 ≫ v59.11.7           │
+│   Changelog: https://github.com/vercel/vercel/releases   │
+│         Run `npm i -g vercel@latest` to update.          │
+│                                                          │
+╰──────────────────────────────────────────────────────────╯
+[2026-09-06 09:56:38] Deployed
+[2026-09-06 09:56:38] No new events detected — skipping subscriber notification
+[2026-09-06 09:56:38] === Sync Complete ===
+[status-check] Resend error:  
+[2026-09-08 02:02:01] === Starting Daily Sync ===
+[2026-09-08 02:02:01] === Starting Daily Sync ===
+[2026-09-08 02:02:01] Local changes detected — preparing deploy
+[2026-09-08 02:02:01] Local changes detected — preparing deploy
