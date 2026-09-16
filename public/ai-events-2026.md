@@ -1,6 +1,6 @@
 # AI / ML / LLM / Robotics Events Tracker
 > **Maintained by:** Daily automated crawler
-> **Last updated:** 2026-07-17
+> **Last updated:** 2026-09-16
 > **Scope:** AI, ML, Deep Learning, LLM, Generative AI, AI Engineering, NLP, Computer Vision, Robotics
 
 ---
@@ -130,6 +130,11 @@
 | AWS re:Invent 2026 | Nov 30-Dec 4, 2026 | Las Vegas, NV, USA | Cloud / AI / ML | https://aws.amazon.com/events/reinvent/ |
 | ⭐ NEW WAIC 2026 (World Artificial Intelligence Conference) | Jul 2026 | Shanghai World Expo Exhibition Centre, Shanghai, China | AI / General | https://www.worldai.com.cn |
 | ⭐ NEW Huawei Connect 2026 | Sep 2026 | Shanghai, China | AI / Cloud / Enterprise AI | https://www.huawei.com/en/events/huaweiconnect |
+| ⭐ NEW World Robot Conference 2026 | Aug 2026 | Beijing, China | AI / Robotics | https://www.worldrobotconference.com |
+| ⭐ NEW Computex 2026 | Jun 2026 | Taipei Nangang Exhibition Center, Taipei, Taiwan | AI / Robotics / Hardware | https://www.computextaipei.com.tw |
+| ⭐ NEW Hong Kong FinTech Week 2026 | Nov 2026 | Hong Kong | AI / FinTech | https://fintechweek.hk |
+| ⭐ NEW AI & Big Data Expo Australia 2026 | Aug 2026 | Melbourne Convention & Exhibition Centre, Melbourne, Australia | AI / Big Data / Industry | https://www.ai-expo.net/australia |
+| ⭐ NEW TechWeek New Zealand 2026 | May 2026 | Auckland, New Zealand | AI / Tech / Innovation | https://techweek.co.nz |
 | ⭐ NEW GITEX Global 2026 | Oct 2026 | Dubai World Trade Centre, Dubai, UAE | AI / General | https://www.gitex.com |
 | ⭐ NEW Nordic AI Summit 2026 | Oct-Nov 2026 | Oslo, Norway | AI / General | https://www.nordicaisummit.com |
 | ⭐ NEW AI Sweden Annual Summit 2026 | Oct 2026 | Stockholm, Sweden | AI / General | https://www.ai.se |
