@@ -3926,3 +3926,21 @@ Common next commands:
 [2026-09-23 02:02:01] === Starting Daily Sync ===
 [2026-09-23 02:02:01] Local changes detected — preparing deploy
 [2026-09-23 02:02:01] Local changes detected — preparing deploy
+[main 31ac0d3] Daily sync: curated update - 2026-09-23 02:02:01 UTC
+ 1 file changed, 34 insertions(+)
+[2026-09-23 02:02:01] Committed
+[2026-09-23 02:02:01] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+   cde39f4..31ac0d3  main -> main
+To https://github.com/jpaine/ai-events-vercel.git
+   cde39f4..31ac0d3  main -> main
+[2026-09-23 02:02:04] Pushed
+[2026-09-23 02:02:04] Pushed
+Generated ICS file with 143 events
+Generated ICS file with 143 events
+[main 24ca6f5] Regenerate ICS calendar
+ 1 file changed, 143 insertions(+), 143 deletions(-)
+[2026-09-23 02:02:07] Deploying to Vercel...
+[2026-09-23 02:02:07] Deploying to Vercel...
+[2026-09-23 02:03:09] === Starting Daily Sync ===
+[2026-09-23 02:03:09] Local changes detected — preparing deploy
