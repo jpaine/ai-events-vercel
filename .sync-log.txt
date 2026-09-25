@@ -3977,3 +3977,13 @@ Common next commands:
 [status-check] Email sent: {"id":"01a0cbc6-e196-736a-bc63-567981f2f1f3"}
 [2026-09-24 06:00:41] === Starting Daily Sync ===
 [2026-09-24 06:00:41] Local changes detected — preparing deploy
+[2026-09-24 06:00:41] Committed
+To https://github.com/jpaine/ai-events-vercel.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 40b79a799ee3237bbbe18217d3fa1b230835d9f5 but expected ec1c81dea91dfd308d01a5c13d751674303fcd6b)
+error: failed to push some refs to 'https://github.com/jpaine/ai-events-vercel.git'
+[2026-09-24 14:19:38] ERROR: Failed to pull/rebase
+[2026-09-24 14:19:38] === Sync Failed ===
+[2026-09-26 02:02:01] === Starting Daily Sync ===
+[2026-09-26 02:02:01] === Starting Daily Sync ===
+[2026-09-26 02:02:01] Local changes detected — preparing deploy
+[2026-09-26 02:02:01] Local changes detected — preparing deploy
